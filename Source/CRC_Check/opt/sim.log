@@ -1,0 +1,86 @@
+# Reading D:/softs/ModelSim/tcl/vsim/pref.tcl 
+# //  ModelSim SE-64 10.1c Jul 28 2012 
+# //
+# //  Copyright 1991-2012 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# vsim -do {add wave -position insertpoint sim:CRC_Check_tb/CRC_Check_dut/*; run -all} -l ../opt/sim.log -lib work -gui -voptargs=+acc=npr top 
+# Loading sv_std.std
+# Loading work.CRC_Check_tb(fast)
+# Loading work.CRC_Check(fast)
+# add wave -position insertpoint sim:CRC_Check_tb/CRC_Check_dut/* 
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: 24202  Hostname: LAPTOP-EQBIQTIM  ProcessID: 796
+# 
+#           Attempting to use alternate WLF file "./wlftab0634".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftab0634
+# 
+#  run -all 
+# At time                    0, wr_sop = 0, wr_eop = 0, wr_valid = 0,wr_data = 00,crc_valid = x
+# At time                    5, wr_sop = 0, wr_eop = 0, wr_valid = 0,wr_data = 00,crc_valid = 0
+# At time                   15, wr_sop = 1, wr_eop = 0, wr_valid = 1,wr_data = 00,crc_valid = 0
+# At time                   25, wr_sop = 0, wr_eop = 0, wr_valid = 1,wr_data = 81,crc_valid = 0
+# At time                   35, wr_sop = 0, wr_eop = 0, wr_valid = 1,wr_data = 09,crc_valid = 0
+# At time                   45, wr_sop = 0, wr_eop = 0, wr_valid = 1,wr_data = 63,crc_valid = 0
+# At time                   55, wr_sop = 0, wr_eop = 0, wr_valid = 0,wr_data = 0d,crc_valid = 0
+# At time                   65, wr_sop = 0, wr_eop = 0, wr_valid = 1,wr_data = 8d,crc_valid = 0
+# At time                   75, wr_sop = 0, wr_eop = 0, wr_valid = 1,wr_data = 65,crc_valid = 0
+# At time                   85, wr_sop = 0, wr_eop = 0, wr_valid = 1,wr_data = 12,crc_valid = 0
+# At time                   95, wr_sop = 0, wr_eop = 0, wr_valid = 1,wr_data = 82,crc_valid = 0
+# At time                  105, wr_sop = 0, wr_eop = 1, wr_valid = 1,wr_data = 82,crc_valid = 0
+# At time                  115, wr_sop = 0, wr_eop = 0, wr_valid = 1,wr_data = 82,crc_valid = 0
+# At time                  135, wr_sop = 1, wr_eop = 0, wr_valid = 1,wr_data = 82,crc_valid = 0
+# At time                  145, wr_sop = 0, wr_eop = 0, wr_valid = 1,wr_data = 76,crc_valid = 0
+# At time                  155, wr_sop = 0, wr_eop = 0, wr_valid = 1,wr_data = 3d,crc_valid = 0
+# At time                  165, wr_sop = 0, wr_eop = 0, wr_valid = 1,wr_data = ed,crc_valid = 0
+# At time                  175, wr_sop = 0, wr_eop = 0, wr_valid = 1,wr_data = 8c,crc_valid = 0
+# At time                  185, wr_sop = 0, wr_eop = 0, wr_valid = 0,wr_data = f9,crc_valid = 0
+# At time                  195, wr_sop = 0, wr_eop = 0, wr_valid = 1,wr_data = c6,crc_valid = 0
+# At time                  205, wr_sop = 0, wr_eop = 0, wr_valid = 1,wr_data = c5,crc_valid = 0
+# At time                  215, wr_sop = 0, wr_eop = 0, wr_valid = 1,wr_data = aa,crc_valid = 0
+# At time                  225, wr_sop = 0, wr_eop = 0, wr_valid = 1,wr_data = 8a,crc_valid = 0
+# At time                  235, wr_sop = 0, wr_eop = 1, wr_valid = 1,wr_data = 8a,crc_valid = 0
+# At time                  245, wr_sop = 0, wr_eop = 0, wr_valid = 1,wr_data = 8a,crc_valid = 0
+# At time                  265, wr_sop = 1, wr_eop = 0, wr_valid = 1,wr_data = 8a,crc_valid = 0
+# At time                  275, wr_sop = 0, wr_eop = 0, wr_valid = 1,wr_data = 12,crc_valid = 0
+# At time                  285, wr_sop = 0, wr_eop = 0, wr_valid = 1,wr_data = 8f,crc_valid = 0
+# At time                  295, wr_sop = 0, wr_eop = 0, wr_valid = 0,wr_data = f2,crc_valid = 0
+# At time                  305, wr_sop = 0, wr_eop = 0, wr_valid = 1,wr_data = ce,crc_valid = 0
+# At time                  315, wr_sop = 0, wr_eop = 0, wr_valid = 1,wr_data = 65,crc_valid = 0
+# At time                  325, wr_sop = 0, wr_eop = 1, wr_valid = 1,wr_data = 65,crc_valid = 1
+# At time                  335, wr_sop = 0, wr_eop = 0, wr_valid = 1,wr_data = 65,crc_valid = 0
+# At time                  355, wr_sop = 1, wr_eop = 0, wr_valid = 1,wr_data = 65,crc_valid = 0
+# At time                  365, wr_sop = 0, wr_eop = 0, wr_valid = 1,wr_data = 5c,crc_valid = 0
+# At time                  375, wr_sop = 0, wr_eop = 0, wr_valid = 1,wr_data = bd,crc_valid = 0
+# At time                  385, wr_sop = 0, wr_eop = 0, wr_valid = 1,wr_data = 2d,crc_valid = 0
+# At time                  395, wr_sop = 0, wr_eop = 0, wr_valid = 0,wr_data = 65,crc_valid = 0
+# At time                  405, wr_sop = 0, wr_eop = 0, wr_valid = 1,wr_data = 63,crc_valid = 0
+# At time                  415, wr_sop = 0, wr_eop = 0, wr_valid = 1,wr_data = 0a,crc_valid = 0
+# At time                  425, wr_sop = 0, wr_eop = 0, wr_valid = 1,wr_data = 80,crc_valid = 0
+# At time                  435, wr_sop = 0, wr_eop = 0, wr_valid = 1,wr_data = 75,crc_valid = 0
+# At time                  445, wr_sop = 0, wr_eop = 1, wr_valid = 1,wr_data = 75,crc_valid = 1
+# At time                  455, wr_sop = 0, wr_eop = 0, wr_valid = 1,wr_data = 75,crc_valid = 0
+# At time                  475, wr_sop = 1, wr_eop = 0, wr_valid = 1,wr_data = 75,crc_valid = 0
+# At time                  485, wr_sop = 0, wr_eop = 0, wr_valid = 1,wr_data = 9d,crc_valid = 0
+# At time                  495, wr_sop = 0, wr_eop = 0, wr_valid = 1,wr_data = 96,crc_valid = 0
+# At time                  505, wr_sop = 0, wr_eop = 0, wr_valid = 1,wr_data = 13,crc_valid = 0
+# At time                  515, wr_sop = 0, wr_eop = 0, wr_valid = 1,wr_data = 0d,crc_valid = 0
+# At time                  525, wr_sop = 0, wr_eop = 0, wr_valid = 0,wr_data = 53,crc_valid = 0
+# At time                  535, wr_sop = 0, wr_eop = 0, wr_valid = 1,wr_data = 6b,crc_valid = 0
+# At time                  545, wr_sop = 0, wr_eop = 0, wr_valid = 1,wr_data = d5,crc_valid = 0
+# At time                  555, wr_sop = 0, wr_eop = 0, wr_valid = 1,wr_data = 02,crc_valid = 0
+# At time                  565, wr_sop = 0, wr_eop = 0, wr_valid = 1,wr_data = 2b,crc_valid = 0
+# At time                  575, wr_sop = 0, wr_eop = 1, wr_valid = 1,wr_data = 2b,crc_valid = 1
+# At time                  585, wr_sop = 0, wr_eop = 0, wr_valid = 1,wr_data = 2b,crc_valid = 0
+# ** Note: $finish    : ../TB/CRC_Check_tb.sv(123)
+#    Time: 605 ns  Iteration: 0  Instance: /CRC_Check_tb
+# 1
+# Break at ../TB/CRC_Check_tb.sv line 123
+# Causality operation skipped due to absense of debug database file

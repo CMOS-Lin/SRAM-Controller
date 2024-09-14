@@ -1,0 +1,249 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "wr_ena",
+					"strict" : false
+				},
+				{
+					"name" : "rd_ena",
+					"strict" : false
+				},
+				{
+					"name" : "o_sop",
+					"strict" : false
+				},
+				{
+					"name" : "o_eop",
+					"strict" : false
+				},
+				{
+					"name" : "addr[0]",
+					"strict" : false
+				},
+				{
+					"name" : "addr[1]",
+					"strict" : false
+				},
+				{
+					"name" : "addr[2]",
+					"strict" : false
+				},
+				{
+					"name" : "addr[3]",
+					"strict" : false
+				},
+				{
+					"name" : "addr[4]",
+					"strict" : false
+				},
+				{
+					"name" : "addr[5]",
+					"strict" : false
+				},
+				{
+					"name" : "addr[6]",
+					"strict" : false
+				},
+				{
+					"name" : "addr[7]",
+					"strict" : false
+				},
+				{
+					"name" : "addr[8]",
+					"strict" : false
+				},
+				{
+					"name" : "addr[9]",
+					"strict" : false
+				},
+				{
+					"name" : "addr[10]",
+					"strict" : false
+				},
+				{
+					"name" : "addr[11]",
+					"strict" : false
+				},
+				{
+					"name" : "addr[12]",
+					"strict" : false
+				},
+				{
+					"name" : "addr[13]",
+					"strict" : false
+				},
+				{
+					"name" : "data_width[0]",
+					"strict" : false
+				},
+				{
+					"name" : "data_width[1]",
+					"strict" : false
+				},
+				{
+					"name" : "data_width[2]",
+					"strict" : false
+				},
+				{
+					"name" : "data_width[3]",
+					"strict" : false
+				},
+				{
+					"name" : "data_width[4]",
+					"strict" : false
+				},
+				{
+					"name" : "data_width[5]",
+					"strict" : false
+				},
+				{
+					"name" : "data_width[6]",
+					"strict" : false
+				},
+				{
+					"name" : "data_width[7]",
+					"strict" : false
+				},
+				{
+					"name" : "o_data[0]",
+					"strict" : false
+				},
+				{
+					"name" : "o_data[1]",
+					"strict" : false
+				},
+				{
+					"name" : "o_data[2]",
+					"strict" : false
+				},
+				{
+					"name" : "o_data[3]",
+					"strict" : false
+				},
+				{
+					"name" : "o_data[4]",
+					"strict" : false
+				},
+				{
+					"name" : "o_data[5]",
+					"strict" : false
+				},
+				{
+					"name" : "o_data[6]",
+					"strict" : false
+				},
+				{
+					"name" : "o_data[7]",
+					"strict" : false
+				},
+				{
+					"name" : "prior_o[0]",
+					"strict" : false
+				},
+				{
+					"name" : "prior_o[1]",
+					"strict" : false
+				},
+				{
+					"name" : "prior_o[2]",
+					"strict" : false
+				},
+				{
+					"name" : "error",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "rst_n",
+					"strict" : false
+				},
+				{
+					"name" : "ready",
+					"strict" : false
+				},
+				{
+					"name" : "wr_data[3]",
+					"strict" : false
+				},
+				{
+					"name" : "wr_data[7]",
+					"strict" : false
+				},
+				{
+					"name" : "wr_data[11]",
+					"strict" : false
+				},
+				{
+					"name" : "wr_data[15]",
+					"strict" : false
+				},
+				{
+					"name" : "wr_data[2]",
+					"strict" : false
+				},
+				{
+					"name" : "wr_data[6]",
+					"strict" : false
+				},
+				{
+					"name" : "wr_data[10]",
+					"strict" : false
+				},
+				{
+					"name" : "wr_data[14]",
+					"strict" : false
+				},
+				{
+					"name" : "wr_data[12]",
+					"strict" : false
+				},
+				{
+					"name" : "wr_data[13]",
+					"strict" : false
+				},
+				{
+					"name" : "wr_data[4]",
+					"strict" : false
+				},
+				{
+					"name" : "wr_data[5]",
+					"strict" : false
+				},
+				{
+					"name" : "wr_data[8]",
+					"strict" : false
+				},
+				{
+					"name" : "wr_data[9]",
+					"strict" : false
+				},
+				{
+					"name" : "wr_data[1]",
+					"strict" : false
+				},
+				{
+					"name" : "wr_data[0]",
+					"strict" : false
+				},
+				{
+					"name" : "wr_vld",
+					"strict" : false
+				},
+				{
+					"name" : "wr_eop",
+					"strict" : false
+				},
+				{
+					"name" : "wr_sop",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

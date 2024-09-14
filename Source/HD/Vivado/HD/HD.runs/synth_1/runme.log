@@ -1,0 +1,578 @@
+
+*** Running vivado
+    with args -log HD.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source HD.tcl
+
+
+****** Vivado v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source HD.tcl -notrace
+Command: synth_design -top HD -part xc7z020clg400-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 5540 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 700.992 ; gain = 236.453
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'HD' [D:/file/HD/src/HD.v:1]
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter PRIORITY_BIT bound to: 3 - type: integer 
+	Parameter DATAPACK_BIT bound to: 1024 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'HD' (1#1) [D:/file/HD/src/HD.v:1]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 773.145 ; gain = 308.605
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 773.145 ; gain = 308.605
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 773.145 ; gain = 308.605
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-2
+WARNING: [Synth 8-327] inferring latch for variable 'Queue_reg' [D:/file/HD/src/HD.v:70]
+WARNING: [Synth 8-327] inferring latch for variable 'frame_reg' [D:/file/HD/src/HD.v:70]
+WARNING: [Synth 8-327] inferring latch for variable 'error_flag_reg' [D:/file/HD/src/HD.v:41]
+WARNING: [Synth 8-327] inferring latch for variable 'error_reg' [D:/file/HD/src/HD.v:57]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 773.145 ; gain = 308.605
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 1     
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 5     
+	   3 Input      1 Bit         XORs := 2     
+	  11 Input      1 Bit         XORs := 1     
+	   4 Input      1 Bit         XORs := 2     
+	   5 Input      1 Bit         XORs := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input   1024 Bit        Muxes := 3     
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module HD 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 1     
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 5     
+	   3 Input      1 Bit         XORs := 2     
+	  11 Input      1 Bit         XORs := 1     
+	   4 Input      1 Bit         XORs := 2     
+	   5 Input      1 Bit         XORs := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input   1024 Bit        Muxes := 3     
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[1023]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[1022]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[1021]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[1020]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[1019]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[1018]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[1017]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[1016]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[1015]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[1014]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[1013]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[1012]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[1011]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[1010]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[1009]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[1008]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[1007]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[1006]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[1005]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[1004]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[1003]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[1002]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[1001]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[1000]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[999]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[998]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[997]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[996]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[995]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[994]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[993]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[992]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[991]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[990]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[989]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[988]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[987]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[986]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[985]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[984]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[983]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[982]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[981]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[980]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[979]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[978]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[977]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[976]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[975]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[974]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[973]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[972]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[971]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[970]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[969]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[968]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[967]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[966]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[965]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[964]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[963]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[962]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[961]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[960]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[959]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[958]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[957]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[956]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[955]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[954]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[953]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[952]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[951]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[950]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[949]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[948]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[947]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[946]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[945]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[944]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[943]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[942]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[941]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[940]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[939]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[938]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[937]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[936]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[935]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[934]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[933]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[932]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[931]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[930]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[929]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[928]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[927]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[926]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[925]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[924]) is unused and will be removed from module HD.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'Queue_reg[1023]__0/Q' [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'Queue_reg[1022]__0/Q' [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'Queue_reg[1021]__0/Q' [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'Queue_reg[1020]__0/Q' [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'Queue_reg[1019]__0/Q' [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'Queue_reg[1018]__0/Q' [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'Queue_reg[1017]__0/Q' [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'Queue_reg[1016]__0/Q' [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'Queue_reg[1015]__0/Q' [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'Queue_reg[1014]__0/Q' [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'Queue_reg[1013]__0/Q' [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'Queue_reg[1012]__0/Q' [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'Queue_reg[1011]__0/Q' [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'Queue_reg[1010]__0/Q' [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'Queue_reg[1009]__0/Q' [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'Queue_reg[1008]__0/Q' [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'Queue_reg[1007]__0/Q' [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'Queue_reg[1006]__0/Q' [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'Queue_reg[1005]__0/Q' [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'Queue_reg[1004]__0/Q' [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'Queue_reg[1003]__0/Q' [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'Queue_reg[1002]__0/Q' [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'Queue_reg[1001]__0/Q' [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'Queue_reg[1000]__0/Q' [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'Queue_reg[999]__0/Q' [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'Queue_reg[998]__0/Q' [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'Queue_reg[997]__0/Q' [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'Queue_reg[996]__0/Q' [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'Queue_reg[995]__0/Q' [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'Queue_reg[994]__0/Q' [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'Queue_reg[993]__0/Q' [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'Queue_reg[992]__0/Q' [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'Queue_reg[991]__0/Q' [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'Queue_reg[990]__0/Q' [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'Queue_reg[989]__0/Q' [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'Queue_reg[988]__0/Q' [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'Queue_reg[987]__0/Q' [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'Queue_reg[986]__0/Q' [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'Queue_reg[985]__0/Q' [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'Queue_reg[984]__0/Q' [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'Queue_reg[983]__0/Q' [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'Queue_reg[982]__0/Q' [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'Queue_reg[981]__0/Q' [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'Queue_reg[980]__0/Q' [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'Queue_reg[979]__0/Q' [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'Queue_reg[978]__0/Q' [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'Queue_reg[977]__0/Q' [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'Queue_reg[976]__0/Q' [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'Queue_reg[975]__0/Q' [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'Queue_reg[974]__0/Q' [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/file/HD/src/HD.v:27]
+INFO: [Common 17-14] Message 'Synth 8-6859' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/HD/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/HD/src/HD.v:27]
+INFO: [Common 17-14] Message 'Synth 8-6858' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 956.105 ; gain = 491.566
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 960.141 ; gain = 495.602
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 960.141 ; gain = 495.602
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 960.164 ; gain = 495.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 960.164 ; gain = 495.625
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 960.164 ; gain = 495.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 960.164 ; gain = 495.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 960.164 ; gain = 495.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 960.164 ; gain = 495.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |BUFG |     1|
+|2     |LUT1 |     1|
+|3     |LUT2 |     3|
+|4     |LUT3 |     2|
+|5     |LUT4 |     2|
+|6     |LUT5 |     3|
+|7     |LUT6 |     7|
+|8     |FDCE |     2|
+|9     |LD   |     1|
+|10    |LDC  |     1|
+|11    |IBUF |    21|
+|12    |OBUF |  1029|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |  1073|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 960.164 ; gain = 495.625
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 3093 critical warnings and 1035 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 960.164 ; gain = 495.625
+Synthesis Optimization Complete : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 960.164 ; gain = 495.625
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 972.293 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'HD' is not ideal for floorplanning, since the cellview 'HD' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1074.680 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  LD => LDCE: 1 instance 
+  LDC => LDCE: 1 instance 
+
+INFO: [Common 17-83] Releasing license: Synthesis
+14 Infos, 105 Warnings, 200 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1074.680 ; gain = 634.961
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1074.680 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/file/HD/Vivado/HD/HD.runs/synth_1/HD.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file HD_utilization_synth.rpt -pb HD_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Jul 22 16:33:59 2024...

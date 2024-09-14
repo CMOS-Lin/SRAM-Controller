@@ -1,0 +1,632 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Thu Jul 25 21:31:44 2024
+# Process ID: 22564
+# Current directory: D:/file/WRR_FIFO/Vivado/pro/WRR
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7268 D:\file\WRR_FIFO\Vivado\pro\WRR\WRR.xpr
+# Log file: D:/file/WRR_FIFO/Vivado/pro/WRR/vivado.log
+# Journal file: D:/file/WRR_FIFO/Vivado/pro/WRR\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/file/WRR_FIFO/Vivado/pro/WRR/WRR.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/softs/Vivado/vivado2019.2/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 976.215 ; gain = 253.102
+update_compile_order -fileset sources_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Thu Jul 25 21:32:16 2024] Launched impl_1...
+Run output will be captured here: D:/file/WRR_FIFO/Vivado/pro/WRR/WRR.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+[Thu Jul 25 21:33:31 2024] Launched synth_1...
+Run output will be captured here: D:/file/WRR_FIFO/Vivado/pro/WRR/WRR.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 16
+[Thu Jul 25 21:35:36 2024] Launched impl_1...
+Run output will be captured here: D:/file/WRR_FIFO/Vivado/pro/WRR/WRR.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7z020clg400-2
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.074 . Memory (MB): peak = 1335.586 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 175 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.374 . Memory (MB): peak = 2039.602 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.374 . Memory (MB): peak = 2039.602 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2039.602 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 110 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 104 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 6 instances
+
+open_run: Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 2233.754 ; gain = 1123.375
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+[Thu Jul 25 21:38:42 2024] Launched synth_1...
+Run output will be captured here: D:/file/WRR_FIFO/Vivado/pro/WRR/WRR.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 16
+[Thu Jul 25 21:40:49 2024] Launched impl_1...
+Run output will be captured here: D:/file/WRR_FIFO/Vivado/pro/WRR/WRR.runs/impl_1/runme.log
+refresh_design
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.072 . Memory (MB): peak = 2325.969 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 175 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.368 . Memory (MB): peak = 2325.969 ; gain = 0.000
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.368 . Memory (MB): peak = 2325.969 ; gain = 0.000
+refresh_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2325.969 ; gain = 16.012
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Thu Jul 25 21:42:59 2024] Launched impl_1...
+Run output will be captured here: D:/file/WRR_FIFO/Vivado/pro/WRR/WRR.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -jobs 16
+[Thu Jul 25 21:45:40 2024] Launched synth_1...
+Run output will be captured here: D:/file/WRR_FIFO/Vivado/pro/WRR/WRR.runs/synth_1/runme.log
+[Thu Jul 25 21:45:40 2024] Launched impl_1...
+Run output will be captured here: D:/file/WRR_FIFO/Vivado/pro/WRR/WRR.runs/impl_1/runme.log
+refresh_design
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.073 . Memory (MB): peak = 2449.656 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 175 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.367 . Memory (MB): peak = 2449.656 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.367 . Memory (MB): peak = 2449.656 ; gain = 0.000
+refresh_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2449.656 ; gain = 16.094
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+save_constraints
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Thu Jul 25 21:51:38 2024] Launched synth_1...
+Run output will be captured here: D:/file/WRR_FIFO/Vivado/pro/WRR/WRR.runs/synth_1/runme.log
+[Thu Jul 25 21:51:38 2024] Launched impl_1...
+Run output will be captured here: D:/file/WRR_FIFO/Vivado/pro/WRR/WRR.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.2
+  **** Build date : Nov  6 2019 at 22:12:23
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2019.2.0
+  **** Build date : Nov 07 2019-13:28:22
+    ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 2511.262 ; gain = 3.117
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+open_hw_target: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 3745.980 ; gain = 1234.719
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+WARNING: [Xicom 50-38] xicom: No CseXsdb register file specified for CseXsdb slave type: 0, cse driver version: 0. Slave initialization skipped.
+WARNING: [Xicom 50-38] xicom: No CseXsdb register file specified for CseXsdb slave type: 0, cse driver version: 0. Slave initialization skipped.
+WARNING: [Xicom 50-38] xicom: No CseXsdb register file specified for CseXsdb slave type: 0, cse driver version: 0. Slave initialization skipped.
+WARNING: [Xicom 50-38] xicom: No CseXsdb register file specified for CseXsdb slave type: 0, cse driver version: 0. Slave initialization skipped.
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/file/WRR_FIFO/Vivado/pro/WRR/WRR.runs/synth_1
+
+launch_runs impl_1 -jobs 16
+[Thu Jul 25 21:57:04 2024] Launched synth_1...
+Run output will be captured here: D:/file/WRR_FIFO/Vivado/pro/WRR/WRR.runs/synth_1/runme.log
+[Thu Jul 25 21:57:04 2024] Launched impl_1...
+Run output will be captured here: D:/file/WRR_FIFO/Vivado/pro/WRR/WRR.runs/impl_1/runme.log
+refresh_design
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.073 . Memory (MB): peak = 3791.812 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 175 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.368 . Memory (MB): peak = 3791.812 ; gain = 0.000
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.369 . Memory (MB): peak = 3791.812 ; gain = 0.000
+refresh_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 3791.812 ; gain = 13.902
+close_design
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_2
+Design is defaulting to synth run part: xc7z020clg400-2
+INFO: [Project 1-454] Reading design checkpoint 'd:/file/WRR_FIFO/Vivado/pro/WRR/WRR.srcs/sources_1/ip/ila_0/ila_0.dcp' for cell 'your_instance_name'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.052 . Memory (MB): peak = 3897.133 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 157 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Chipscope 16-324] Core: your_instance_name UUID: c43761e0-c036-5039-8c69-07a263a83e64 
+Parsing XDC File [d:/file/WRR_FIFO/Vivado/pro/WRR/WRR.srcs/sources_1/ip/ila_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'your_instance_name/inst'
+Finished Parsing XDC File [d:/file/WRR_FIFO/Vivado/pro/WRR/WRR.srcs/sources_1/ip/ila_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'your_instance_name/inst'
+Parsing XDC File [d:/file/WRR_FIFO/Vivado/pro/WRR/WRR.srcs/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc] for cell 'your_instance_name/inst'
+Finished Parsing XDC File [d:/file/WRR_FIFO/Vivado/pro/WRR/WRR.srcs/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc] for cell 'your_instance_name/inst'
+Parsing XDC File [D:/file/WRR_FIFO/Vivado/pro/WRR/WRR.srcs/constrs_2/new/WRR.xdc]
+Finished Parsing XDC File [D:/file/WRR_FIFO/Vivado/pro/WRR/WRR.srcs/constrs_2/new/WRR.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 3897.133 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 104 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 104 instances
+
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Thu Jul 25 22:01:19 2024] Launched impl_1...
+Run output will be captured here: D:/file/WRR_FIFO/Vivado/pro/WRR/WRR.runs/impl_1/runme.log
+set_property STEPS.WRITE_BITSTREAM.TCL.PRE [ get_files D:/file/WRR_FIFO/Vivado/WRR.tcl -of [get_fileset utils_1] ] [get_runs impl_1]
+set_property STEPS.WRITE_BITSTREAM.TCL.PRE [ get_files D:/file/WRR_FIFO/Vivado/WRR.tcl -of [get_fileset utils_1] ] [get_runs impl_1]
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/file/WRR_FIFO/Vivado/pro/WRR/WRR.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Thu Jul 25 22:09:13 2024] Launched synth_1...
+Run output will be captured here: D:/file/WRR_FIFO/Vivado/pro/WRR/WRR.runs/synth_1/runme.log
+[Thu Jul 25 22:09:14 2024] Launched impl_1...
+Run output will be captured here: D:/file/WRR_FIFO/Vivado/pro/WRR/WRR.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/file/WRR_FIFO/Vivado/pro/WRR/WRR.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Thu Jul 25 22:15:06 2024] Launched synth_1...
+Run output will be captured here: D:/file/WRR_FIFO/Vivado/pro/WRR/WRR.runs/synth_1/runme.log
+[Thu Jul 25 22:15:06 2024] Launched impl_1...
+Run output will be captured here: D:/file/WRR_FIFO/Vivado/pro/WRR/WRR.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/file/WRR_FIFO/Vivado/pro/WRR/WRR.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Thu Jul 25 22:20:13 2024] Launched synth_1...
+Run output will be captured here: D:/file/WRR_FIFO/Vivado/pro/WRR/WRR.runs/synth_1/runme.log
+[Thu Jul 25 22:20:13 2024] Launched impl_1...
+Run output will be captured here: D:/file/WRR_FIFO/Vivado/pro/WRR/WRR.runs/impl_1/runme.log
+set_property PROBES.FILE {D:/file/WRR_FIFO/Vivado/pro/WRR/WRR.runs/impl_1/WRR.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {D:/file/WRR_FIFO/Vivado/pro/WRR/WRR.runs/impl_1/WRR.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/file/WRR_FIFO/Vivado/pro/WRR/WRR.runs/impl_1/WRR.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"your_instance_name"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Jul-25 22:25:30
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Jul-25 22:25:30
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/file/WRR_FIFO/Vivado/pro/WRR/WRR.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/file/WRR_FIFO/Vivado/pro/WRR/WRR.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Thu Jul 25 22:27:20 2024] Launched synth_1...
+Run output will be captured here: D:/file/WRR_FIFO/Vivado/pro/WRR/WRR.runs/synth_1/runme.log
+[Thu Jul 25 22:27:20 2024] Launched impl_1...
+Run output will be captured here: D:/file/WRR_FIFO/Vivado/pro/WRR/WRR.runs/impl_1/runme.log
+open_run impl_1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.073 . Memory (MB): peak = 6109.664 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 175 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.381 . Memory (MB): peak = 6109.664 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.381 . Memory (MB): peak = 6109.664 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 6109.664 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 110 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 104 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 6 instances
+
+open_run: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 6109.664 ; gain = 0.000
+set_property PROBES.FILE {D:/file/WRR_FIFO/Vivado/pro/WRR/WRR.runs/impl_1/WRR.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {D:/file/WRR_FIFO/Vivado/pro/WRR/WRR.runs/impl_1/WRR.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/file/WRR_FIFO/Vivado/pro/WRR/WRR.runs/impl_1/WRR.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Jul-25 22:32:07
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Jul-25 22:32:07
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/file/WRR_FIFO/Vivado/pro/WRR/WRR.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/file/WRR_FIFO/Vivado/pro/WRR/WRR.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Thu Jul 25 22:37:07 2024] Launched synth_1...
+Run output will be captured here: D:/file/WRR_FIFO/Vivado/pro/WRR/WRR.runs/synth_1/runme.log
+[Thu Jul 25 22:37:08 2024] Launched impl_1...
+Run output will be captured here: D:/file/WRR_FIFO/Vivado/pro/WRR/WRR.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/file/WRR_FIFO/Vivado/pro/WRR/WRR.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Thu Jul 25 22:43:08 2024] Launched synth_1...
+Run output will be captured here: D:/file/WRR_FIFO/Vivado/pro/WRR/WRR.runs/synth_1/runme.log
+[Thu Jul 25 22:43:09 2024] Launched impl_1...
+Run output will be captured here: D:/file/WRR_FIFO/Vivado/pro/WRR/WRR.runs/impl_1/runme.log
+set_property PROBES.FILE {D:/file/WRR_FIFO/Vivado/pro/WRR/WRR.runs/impl_1/WRR.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {D:/file/WRR_FIFO/Vivado/pro/WRR/WRR.runs/impl_1/WRR.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/file/WRR_FIFO/Vivado/pro/WRR/WRR.runs/impl_1/WRR.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {wr_data} }
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Jul-25 22:47:41
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Jul-25 22:47:41
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/file/WRR_FIFO/Vivado/pro/WRR/WRR.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+set_property -dict [list CONFIG.C_PROBE13_WIDTH {16}] [get_ips ila_0]
+generate_target all [get_files  D:/file/WRR_FIFO/Vivado/pro/WRR/WRR.srcs/sources_1/ip/ila_0/ila_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ila_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ila_0'...
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/file/WRR_FIFO/Vivado/pro/WRR/WRR.srcs/sources_1/ip/ila_0/ila_0_ooc.xdc'
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ila_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'ila_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ila_0'...
+catch { config_ip_cache -export [get_ips -all ila_0] }
+export_ip_user_files -of_objects [get_files D:/file/WRR_FIFO/Vivado/pro/WRR/WRR.srcs/sources_1/ip/ila_0/ila_0.xci] -no_script -sync -force -quiet
+reset_run ila_0_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/file/WRR_FIFO/Vivado/pro/WRR/WRR.runs/ila_0_synth_1
+
+launch_runs -jobs 16 ila_0_synth_1
+[Thu Jul 25 22:51:07 2024] Launched ila_0_synth_1...
+Run output will be captured here: D:/file/WRR_FIFO/Vivado/pro/WRR/WRR.runs/ila_0_synth_1/runme.log
+export_simulation -of_objects [get_files D:/file/WRR_FIFO/Vivado/pro/WRR/WRR.srcs/sources_1/ip/ila_0/ila_0.xci] -directory D:/file/WRR_FIFO/Vivado/pro/WRR/WRR.ip_user_files/sim_scripts -ip_user_files_dir D:/file/WRR_FIFO/Vivado/pro/WRR/WRR.ip_user_files -ipstatic_source_dir D:/file/WRR_FIFO/Vivado/pro/WRR/WRR.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/file/WRR_FIFO/Vivado/pro/WRR/WRR.cache/compile_simlib/modelsim} {questa=D:/file/WRR_FIFO/Vivado/pro/WRR/WRR.cache/compile_simlib/questa} {riviera=D:/file/WRR_FIFO/Vivado/pro/WRR/WRR.cache/compile_simlib/riviera} {activehdl=D:/file/WRR_FIFO/Vivado/pro/WRR/WRR.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/file/WRR_FIFO/Vivado/pro/WRR/WRR.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Thu Jul 25 22:51:22 2024] Launched ila_0_synth_1, synth_1...
+Run output will be captured here:
+ila_0_synth_1: D:/file/WRR_FIFO/Vivado/pro/WRR/WRR.runs/ila_0_synth_1/runme.log
+synth_1: D:/file/WRR_FIFO/Vivado/pro/WRR/WRR.runs/synth_1/runme.log
+[Thu Jul 25 22:51:23 2024] Launched impl_1...
+Run output will be captured here: D:/file/WRR_FIFO/Vivado/pro/WRR/WRR.runs/impl_1/runme.log
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7z020clg400-2
+Top: WRR
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 6109.664 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'WRR' [D:/file/WRR_FIFO/Vivado/src/WRR.v:1]
+INFO: [Synth 8-6157] synthesizing module 'FIFO_top' [D:/file/WRR_FIFO/Vivado/src/FIFO_top.v:1]
+	Parameter WDATA_WIDTH bound to: 16 - type: integer 
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter PRIORITY_BIT bound to: 3 - type: integer 
+	Parameter DATA_NUMBIT bound to: 7 - type: integer 
+	Parameter DATAPACK_BIT bound to: 1024 - type: integer 
+	Parameter ADDR_BIT bound to: 16 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'HD' [D:/file/WRR_FIFO/Vivado/src/HD.v:1]
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter PRIORITY_BIT bound to: 3 - type: integer 
+	Parameter DATAPACK_BIT bound to: 1024 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'HD' (1#1) [D:/file/WRR_FIFO/Vivado/src/HD.v:1]
+INFO: [Synth 8-6157] synthesizing module 'wrr_fifo' [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:2]
+	Parameter DATAPACK_BIT bound to: 1024 - type: integer 
+	Parameter QUEUE_BIT bound to: 8 - type: integer 
+	Parameter PRIORITY_BIT bound to: 3 - type: integer 
+	Parameter ADDRSIZE bound to: 3 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'priority_num' [D:/file/WRR_FIFO/Vivado/src/priority_num.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'priority_num' (2#1) [D:/file/WRR_FIFO/Vivado/src/priority_num.sv:1]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:110]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:111]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:112]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:113]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:114]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:115]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:116]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:117]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:120]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:120]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:121]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:121]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:122]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:122]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:123]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:123]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:124]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:124]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:125]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:125]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:126]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:126]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:127]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:127]
+WARNING: [Synth 8-5856] 3D RAM Rout_PQ_reg  for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[7][7] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[7][6] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[7][5] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[7][4] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[7][3] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[7][2] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[7][1] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[7][0] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[6][7] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[6][6] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[6][5] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[6][4] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[6][3] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[6][2] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[6][1] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[6][0] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[5][7] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[5][6] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[5][5] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[5][4] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[5][3] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[5][2] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[5][1] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[5][0] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[4][7] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[4][6] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[4][5] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[4][4] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[4][3] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[4][2] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[4][1] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[4][0] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[3][7] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[3][6] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[3][5] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[3][4] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[3][3] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[3][2] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[3][1] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[3][0] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[2][7] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[2][6] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[2][5] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[2][4] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[2][3] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[2][2] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[2][1] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[2][0] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[1][7] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[1][6] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[1][5] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[1][4] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[1][3] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[1][2] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[1][1] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[1][0] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[0][7] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[0][6] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[0][5] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[0][4] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[0][3] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[0][2] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[0][1] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[0][0] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Queue_out_reg in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:184]
+INFO: [Synth 8-6155] done synthesizing module 'wrr_fifo' (3#1) [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:2]
+WARNING: [Synth 8-7023] instance 'b2v_inst1' of module 'wrr_fifo' has 8 connections declared, but only 7 given [D:/file/WRR_FIFO/Vivado/src/FIFO_top.v:54]
+INFO: [Synth 8-6157] synthesizing module 'Data_Out' [D:/file/WRR_FIFO/Vivado/src/Data_Out.v:1]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter DATAPACK_BIT bound to: 1024 - type: integer 
+	Parameter PRIORITY_BIT bound to: 3 - type: integer 
+	Parameter DATA_NUMBIT bound to: 8 - type: integer 
+	Parameter ADDR_BIT bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Data_Out' (4#1) [D:/file/WRR_FIFO/Vivado/src/Data_Out.v:1]
+WARNING: [Synth 8-689] width (7) of port connection 'data_width' does not match port width (8) of module 'Data_Out' [D:/file/WRR_FIFO/Vivado/src/FIFO_top.v:76]
+INFO: [Synth 8-6155] done synthesizing module 'FIFO_top' (5#1) [D:/file/WRR_FIFO/Vivado/src/FIFO_top.v:1]
+WARNING: [Synth 8-689] width (16) of port connection 'o_data' does not match port width (8) of module 'FIFO_top' [D:/file/WRR_FIFO/Vivado/src/WRR.v:67]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [D:/file/WRR_FIFO/Vivado/src/WRR.v:72]
+INFO: [Synth 8-6157] synthesizing module 'ila_0' [D:/file/WRR_FIFO/Vivado/pro/WRR/.Xil/Vivado-22564-LAPTOP-EQBIQTIM/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ila_0' (6#1) [D:/file/WRR_FIFO/Vivado/pro/WRR/.Xil/Vivado-22564-LAPTOP-EQBIQTIM/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'your_instance_name'. This will prevent further optimization [D:/file/WRR_FIFO/Vivado/src/WRR.v:72]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'FIFO_top_dut'. This will prevent further optimization [D:/file/WRR_FIFO/Vivado/src/WRR.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'WRR' (7#1) [D:/file/WRR_FIFO/Vivado/src/WRR.v:1]
+WARNING: [Synth 8-3331] design priority_num has unconnected port rst
+WARNING: [Synth 8-3331] design priority_num has unconnected port empty[7]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 6109.664 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 6109.664 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 6109.664 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'd:/file/WRR_FIFO/Vivado/pro/WRR/WRR.srcs/sources_1/ip/ila_0/ila_0.dcp' for cell 'your_instance_name'
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.873 . Memory (MB): peak = 6109.664 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 218 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: outdata[10]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets outdata[10]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: outdata[10]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets outdata[10]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: outdata_OBUF[11]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets outdata_OBUF[11]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: outdata_OBUF[11]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets outdata_OBUF[11]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: outdata_OBUF[12]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets outdata_OBUF[12]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: outdata_OBUF[12]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets outdata_OBUF[12]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: outdata_OBUF[13]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets outdata_OBUF[13]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: outdata_OBUF[13]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets outdata_OBUF[13]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: outdata_OBUF[14]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets outdata_OBUF[14]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: outdata_OBUF[14]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets outdata_OBUF[14]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: outdata_OBUF[15]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets outdata_OBUF[15]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: outdata_OBUF[15]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets outdata_OBUF[15]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: outdata_OBUF[8]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets outdata_OBUF[8]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: outdata_OBUF[8]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets outdata_OBUF[8]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: outdata_OBUF[9]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets outdata_OBUF[9]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: outdata_OBUF[9]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets outdata_OBUF[9]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: sys_clk
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets sys_clk]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: sys_clk
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets sys_clk]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: sys_rst_n
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets sys_rst_n]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: sys_rst_n
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets sys_rst_n]
+INFO: [Opt 31-140] Inserted 2 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 8 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/file/WRR_FIFO/Vivado/pro/WRR/WRR.srcs/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc] for cell 'your_instance_name/inst'
+Finished Parsing XDC File [d:/file/WRR_FIFO/Vivado/pro/WRR/WRR.srcs/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc] for cell 'your_instance_name/inst'
+Parsing XDC File [D:/file/WRR_FIFO/Vivado/pro/WRR/WRR.srcs/constrs_2/new/WRR.xdc]
+WARNING: [Vivado 12-507] No nets matched 'FIFO_top_dut/b2v_inst0/error_reg_i_7_n_0'. [D:/file/WRR_FIFO/Vivado/pro/WRR/WRR.srcs/constrs_2/new/WRR.xdc:22]
+WARNING: [Vivado 12-507] No nets matched 'FIFO_top_dut/b2v_inst0/error_reg_i_3_n_0'. [D:/file/WRR_FIFO/Vivado/pro/WRR/WRR.srcs/constrs_2/new/WRR.xdc:23]
+WARNING: [Vivado 12-507] No nets matched 'FIFO_top_dut/b2v_inst0/error_reg_i_6_n_0'. [D:/file/WRR_FIFO/Vivado/pro/WRR/WRR.srcs/constrs_2/new/WRR.xdc:24]
+Finished Parsing XDC File [D:/file/WRR_FIFO/Vivado/pro/WRR/WRR.srcs/constrs_2/new/WRR.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [D:/file/WRR_FIFO/Vivado/pro/WRR/WRR.srcs/constrs_2/new/WRR.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/WRR_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/file/WRR_FIFO/Vivado/pro/WRR/WRR.srcs/constrs_2/new/WRR.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/WRR_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/WRR_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 6109.664 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 108 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 108 instances
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 6109.664 ; gain = 0.000
+26 Infos, 120 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 6109.664 ; gain = 0.000
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.collectionResultDisplayLimit
+place_ports {outdata[15]} A20
+place_ports {outdata[14]} B19
+place_ports {outdata[13]} B20
+place_ports {outdata[12]} C20
+place_ports {outdata[11]} D18
+place_ports {outdata[10]} D19
+place_ports {outdata[9]} D20
+place_ports {outdata[8]} E17
+set_property IOSTANDARD LVCMOS33 [get_ports [list {outdata[15]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {outdata[14]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {outdata[13]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {outdata[12]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {outdata[11]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {outdata[10]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {outdata[9]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {outdata[8]}]]
+save_constraints
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Thu Jul 25 22:58:42 2024] Launched impl_1...
+Run output will be captured here: D:/file/WRR_FIFO/Vivado/pro/WRR/WRR.runs/impl_1/runme.log
+set_property PROBES.FILE {D:/file/WRR_FIFO/Vivado/pro/WRR/WRR.runs/impl_1/WRR.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {D:/file/WRR_FIFO/Vivado/pro/WRR/WRR.runs/impl_1/WRR.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/file/WRR_FIFO/Vivado/pro/WRR/WRR.runs/impl_1/WRR.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {outdata_OBUF} }
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Jul-25 23:01:09
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Jul-25 23:01:09
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/file/WRR_FIFO/Vivado/pro/WRR/WRR.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+save_wave_config {D:/file/WRR_FIFO/Vivado/pro/WRR/WRR.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Jul 25 23:24:09 2024...

@@ -1,0 +1,7 @@
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+vlog -incr -sv -cover sbceft -work work ../src/HD.v ../tb/HD_sims_tb.sv -l ../opt/compile.log 
+-- Compiling module HD
+-- Skipping module HD_sims_tb
+
+Top level modules:
+	HD_sims_tb

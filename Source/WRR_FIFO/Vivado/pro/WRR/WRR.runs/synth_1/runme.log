@@ -1,0 +1,1005 @@
+
+*** Running vivado
+    with args -log WRR.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source WRR.tcl
+
+
+****** Vivado v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source WRR.tcl -notrace
+Command: synth_design -top WRR -part xc7z020clg400-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-2
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 28620 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1017.695 ; gain = 234.066
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'WRR' [D:/file/WRR_FIFO/Vivado/src/WRR.v:1]
+INFO: [Synth 8-6157] synthesizing module 'FIFO_top' [D:/file/WRR_FIFO/Vivado/src/FIFO_top.v:1]
+	Parameter WDATA_WIDTH bound to: 16 - type: integer 
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter PRIORITY_BIT bound to: 3 - type: integer 
+	Parameter DATA_NUMBIT bound to: 7 - type: integer 
+	Parameter DATAPACK_BIT bound to: 1024 - type: integer 
+	Parameter ADDR_BIT bound to: 16 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'HD' [D:/file/WRR_FIFO/Vivado/src/HD.v:1]
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter PRIORITY_BIT bound to: 3 - type: integer 
+	Parameter DATAPACK_BIT bound to: 1024 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'HD' (1#1) [D:/file/WRR_FIFO/Vivado/src/HD.v:1]
+INFO: [Synth 8-6157] synthesizing module 'wrr_fifo' [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:2]
+	Parameter DATAPACK_BIT bound to: 1024 - type: integer 
+	Parameter QUEUE_BIT bound to: 8 - type: integer 
+	Parameter PRIORITY_BIT bound to: 3 - type: integer 
+	Parameter ADDRSIZE bound to: 3 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'priority_num' [D:/file/WRR_FIFO/Vivado/src/priority_num.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'priority_num' (2#1) [D:/file/WRR_FIFO/Vivado/src/priority_num.sv:1]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:110]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:111]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:112]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:113]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:114]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:115]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:116]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:117]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:120]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:120]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:121]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:121]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:122]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:122]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:123]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:123]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:124]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:124]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:125]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:125]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:126]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:126]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:127]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:127]
+WARNING: [Synth 8-5856] 3D RAM Rout_PQ_reg  for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[7][7] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[7][6] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[7][5] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[7][4] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[7][3] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[7][2] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[7][1] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[7][0] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[6][7] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[6][6] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[6][5] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[6][4] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[6][3] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[6][2] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[6][1] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[6][0] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[5][7] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[5][6] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[5][5] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[5][4] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[5][3] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[5][2] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[5][1] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[5][0] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[4][7] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[4][6] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[4][5] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[4][4] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[4][3] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[4][2] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[4][1] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[4][0] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[3][7] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[3][6] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[3][5] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[3][4] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[3][3] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[3][2] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[3][1] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[3][0] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[2][7] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[2][6] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[2][5] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[2][4] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[2][3] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[2][2] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[2][1] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[2][0] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[1][7] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[1][6] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[1][5] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[1][4] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[1][3] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[1][2] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[1][1] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[1][0] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[0][7] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[0][6] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[0][5] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[0][4] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[0][3] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[0][2] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[0][1] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Rout_PQ_reg[0][0] in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:152]
+WARNING: [Synth 8-5788] Register Queue_out_reg in module wrr_fifo is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:184]
+INFO: [Synth 8-6155] done synthesizing module 'wrr_fifo' (3#1) [D:/file/WRR_FIFO/Vivado/src/wrr_fifo.sv:2]
+WARNING: [Synth 8-7023] instance 'b2v_inst1' of module 'wrr_fifo' has 8 connections declared, but only 7 given [D:/file/WRR_FIFO/Vivado/src/FIFO_top.v:54]
+INFO: [Synth 8-6157] synthesizing module 'Data_Out' [D:/file/WRR_FIFO/Vivado/src/Data_Out.v:1]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter DATAPACK_BIT bound to: 1024 - type: integer 
+	Parameter PRIORITY_BIT bound to: 3 - type: integer 
+	Parameter DATA_NUMBIT bound to: 8 - type: integer 
+	Parameter ADDR_BIT bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Data_Out' (4#1) [D:/file/WRR_FIFO/Vivado/src/Data_Out.v:1]
+WARNING: [Synth 8-689] width (7) of port connection 'data_width' does not match port width (8) of module 'Data_Out' [D:/file/WRR_FIFO/Vivado/src/FIFO_top.v:76]
+INFO: [Synth 8-6155] done synthesizing module 'FIFO_top' (5#1) [D:/file/WRR_FIFO/Vivado/src/FIFO_top.v:1]
+WARNING: [Synth 8-689] width (16) of port connection 'o_data' does not match port width (8) of module 'FIFO_top' [D:/file/WRR_FIFO/Vivado/src/WRR.v:67]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [D:/file/WRR_FIFO/Vivado/src/WRR.v:72]
+INFO: [Synth 8-6157] synthesizing module 'ila_0' [D:/file/WRR_FIFO/Vivado/pro/WRR/WRR.runs/synth_1/.Xil/Vivado-14892-LAPTOP-EQBIQTIM/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ila_0' (6#1) [D:/file/WRR_FIFO/Vivado/pro/WRR/WRR.runs/synth_1/.Xil/Vivado-14892-LAPTOP-EQBIQTIM/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'your_instance_name'. This will prevent further optimization [D:/file/WRR_FIFO/Vivado/src/WRR.v:72]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'FIFO_top_dut'. This will prevent further optimization [D:/file/WRR_FIFO/Vivado/src/WRR.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'WRR' (7#1) [D:/file/WRR_FIFO/Vivado/src/WRR.v:1]
+WARNING: [Synth 8-3331] design priority_num has unconnected port rst
+WARNING: [Synth 8-3331] design priority_num has unconnected port empty[7]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1123.453 ; gain = 339.824
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1123.453 ; gain = 339.824
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1123.453 ; gain = 339.824
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.814 . Memory (MB): peak = 1123.453 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/file/WRR_FIFO/Vivado/pro/WRR/WRR.srcs/sources_1/ip/ila_0/ila_0/ila_0_in_context.xdc] for cell 'your_instance_name'
+Finished Parsing XDC File [d:/file/WRR_FIFO/Vivado/pro/WRR/WRR.srcs/sources_1/ip/ila_0/ila_0/ila_0_in_context.xdc] for cell 'your_instance_name'
+Parsing XDC File [D:/file/WRR_FIFO/Vivado/pro/WRR/WRR.srcs/constrs_2/new/WRR.xdc]
+WARNING: [Vivado 12-507] No nets matched 'FIFO_top_dut/b2v_inst0/error_reg_i_7_n_0'. [D:/file/WRR_FIFO/Vivado/pro/WRR/WRR.srcs/constrs_2/new/WRR.xdc:22]
+WARNING: [Vivado 12-507] No nets matched 'FIFO_top_dut/b2v_inst0/error_reg_i_3_n_0'. [D:/file/WRR_FIFO/Vivado/pro/WRR/WRR.srcs/constrs_2/new/WRR.xdc:23]
+WARNING: [Vivado 12-507] No nets matched 'FIFO_top_dut/b2v_inst0/error_reg_i_6_n_0'. [D:/file/WRR_FIFO/Vivado/pro/WRR/WRR.srcs/constrs_2/new/WRR.xdc:24]
+Finished Parsing XDC File [D:/file/WRR_FIFO/Vivado/pro/WRR/WRR.srcs/constrs_2/new/WRR.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [D:/file/WRR_FIFO/Vivado/pro/WRR/WRR.srcs/constrs_2/new/WRR.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/WRR_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/file/WRR_FIFO/Vivado/pro/WRR/WRR.srcs/constrs_2/new/WRR.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/WRR_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/WRR_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 1413.930 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.365 . Memory (MB): peak = 1413.930 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1413.930 ; gain = 630.301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1413.930 ; gain = 630.301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for your_instance_name. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1413.930 ; gain = 630.301
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'Queue_reg' [D:/file/WRR_FIFO/Vivado/src/HD.v:71]
+WARNING: [Synth 8-327] inferring latch for variable 'frame_reg' [D:/file/WRR_FIFO/Vivado/src/HD.v:71]
+WARNING: [Synth 8-327] inferring latch for variable 'error_flag_reg' [D:/file/WRR_FIFO/Vivado/src/HD.v:41]
+WARNING: [Synth 8-327] inferring latch for variable 'error_reg' [D:/file/WRR_FIFO/Vivado/src/HD.v:42]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1413.930 ; gain = 630.301
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |wrr_fifo__GB0 |           1|     30720|
+|2     |wrr_fifo__GB1 |           1|     16060|
+|3     |wrr_fifo__GB2 |           1|     16767|
+|4     |wrr_fifo__GB3 |           1|     22528|
+|5     |wrr_fifo__GB4 |           1|     15360|
+|6     |wrr_fifo__GB5 |           1|     31761|
+|7     |FIFO_top__GC0 |           1|     21192|
+|8     |WRR__GC0      |           1|        97|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   7 Input     32 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 3     
+	   2 Input      3 Bit       Adders := 1     
++---XORs : 
+	   2 Input      4 Bit         XORs := 17    
+	   2 Input      1 Bit         XORs := 5     
+	   3 Input      1 Bit         XORs := 2     
+	  11 Input      1 Bit         XORs := 1     
+	   4 Input      1 Bit         XORs := 2     
+	   5 Input      1 Bit         XORs := 1     
++---Registers : 
+	             1024 Bit    Registers := 65    
+	               16 Bit    Registers := 2     
+	                8 Bit    Registers := 4     
+	                4 Bit    Registers := 25    
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 11    
++---Muxes : 
+	   2 Input   1024 Bit        Muxes := 5     
+	   2 Input     16 Bit        Muxes := 2     
+	   9 Input     12 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 31    
+	   8 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 7     
+	   2 Input      1 Bit        Muxes := 166   
+	   4 Input      1 Bit        Muxes := 8     
+	   5 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module WRR 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 5     
+	   5 Input      1 Bit        Muxes := 5     
+Module priority_num 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 6     
+	   8 Input      3 Bit        Muxes := 1     
+Module wrr_fifo 
+Detailed RTL Component Info : 
++---Adders : 
+	   7 Input     32 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 3     
+	   2 Input      3 Bit       Adders := 1     
++---XORs : 
+	   2 Input      4 Bit         XORs := 16    
++---Registers : 
+	             1024 Bit    Registers := 65    
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 25    
++---Muxes : 
+	   9 Input     12 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 25    
+	   8 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 7     
+	   2 Input      1 Bit        Muxes := 152   
+	   4 Input      1 Bit        Muxes := 8     
+Module HD 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 1     
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 5     
+	   3 Input      1 Bit         XORs := 2     
+	  11 Input      1 Bit         XORs := 1     
+	   4 Input      1 Bit         XORs := 2     
+	   5 Input      1 Bit         XORs := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input   1024 Bit        Muxes := 3     
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module Data_Out 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input   1024 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 2 processes.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3331] design priority_num has unconnected port rst
+WARNING: [Synth 8-3331] design priority_num has unconnected port empty[7]
+INFO: [Synth 8-3886] merging instance 'view_reg[3]' (FDCE) to 'view_reg[7]'
+INFO: [Synth 8-3886] merging instance 'view_reg[4]' (FDCE) to 'view_reg[7]'
+INFO: [Synth 8-3886] merging instance 'view_reg[5]' (FDCE) to 'view_reg[7]'
+INFO: [Synth 8-3886] merging instance 'view_reg[6]' (FDCE) to 'view_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\view_reg[7] )
+INFO: [Synth 8-3886] merging instance 'b2v_inst2/addr_reg[4]' (FDCE) to 'b2v_inst2/addr_reg[15]'
+INFO: [Synth 8-3886] merging instance 'b2v_inst2/addr_reg[5]' (FDCE) to 'b2v_inst2/addr_reg[15]'
+INFO: [Synth 8-3886] merging instance 'b2v_inst2/addr_reg[6]' (FDCE) to 'b2v_inst2/addr_reg[15]'
+INFO: [Synth 8-3886] merging instance 'b2v_inst2/addr_reg[7]' (FDCE) to 'b2v_inst2/addr_reg[15]'
+INFO: [Synth 8-3886] merging instance 'b2v_inst2/addr_reg[8]' (FDCE) to 'b2v_inst2/addr_reg[15]'
+INFO: [Synth 8-3886] merging instance 'b2v_inst2/addr_reg[9]' (FDCE) to 'b2v_inst2/addr_reg[15]'
+INFO: [Synth 8-3886] merging instance 'b2v_inst2/addr_reg[10]' (FDCE) to 'b2v_inst2/addr_reg[15]'
+INFO: [Synth 8-3886] merging instance 'b2v_inst2/addr_reg[11]' (FDCE) to 'b2v_inst2/addr_reg[15]'
+INFO: [Synth 8-3886] merging instance 'b2v_inst2/addr_reg[12]' (FDCE) to 'b2v_inst2/addr_reg[15]'
+INFO: [Synth 8-3886] merging instance 'b2v_inst2/addr_reg[13]' (FDCE) to 'b2v_inst2/addr_reg[15]'
+INFO: [Synth 8-3886] merging instance 'b2v_inst2/addr_reg[14]' (FDCE) to 'b2v_inst2/addr_reg[15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (b2v_inst2/\addr_reg[15] )
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[1023]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[1022]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[1021]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[1020]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[1019]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[1018]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[1017]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[1016]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[1015]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[1014]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[1013]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[1012]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[1011]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[1010]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[1009]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[1008]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[1007]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[1006]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[1005]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[1004]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[1003]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[1002]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[1001]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[1000]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[999]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[998]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[997]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[996]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[995]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[994]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[993]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[992]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[991]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[990]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[989]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[988]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[987]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[986]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[985]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[984]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[983]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[982]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[981]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[980]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[979]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[978]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[977]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[976]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[975]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[974]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[973]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[972]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[971]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[970]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[969]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[968]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[967]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[966]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[965]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[964]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[963]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[962]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[961]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[960]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[959]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[958]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[957]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[956]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[955]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[954]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[953]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[952]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[951]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[950]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[949]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[948]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[947]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[946]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[945]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[944]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[943]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[942]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[941]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[940]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[939]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[938]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[937]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[936]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[935]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[934]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[933]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[932]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[931]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[930]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[929]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[928]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[927]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[926]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[925]) is unused and will be removed from module HD.
+WARNING: [Synth 8-3332] Sequential element (Queue_reg[924]) is unused and will be removed from module HD.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'b2v_inst0/Queue_reg[1023]__0/Q' [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'b2v_inst0/Queue_reg[1022]__0/Q' [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'b2v_inst0/Queue_reg[1021]__0/Q' [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'b2v_inst0/Queue_reg[1020]__0/Q' [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'b2v_inst0/Queue_reg[1019]__0/Q' [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'b2v_inst0/Queue_reg[1018]__0/Q' [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'b2v_inst0/Queue_reg[1017]__0/Q' [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'b2v_inst0/Queue_reg[1016]__0/Q' [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'b2v_inst0/Queue_reg[1015]__0/Q' [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'b2v_inst0/Queue_reg[1014]__0/Q' [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'b2v_inst0/Queue_reg[1013]__0/Q' [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'b2v_inst0/Queue_reg[1012]__0/Q' [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'b2v_inst0/Queue_reg[1011]__0/Q' [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'b2v_inst0/Queue_reg[1010]__0/Q' [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'b2v_inst0/Queue_reg[1009]__0/Q' [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'b2v_inst0/Queue_reg[1008]__0/Q' [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'b2v_inst0/Queue_reg[1007]__0/Q' [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'b2v_inst0/Queue_reg[1006]__0/Q' [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'b2v_inst0/Queue_reg[1005]__0/Q' [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'b2v_inst0/Queue_reg[1004]__0/Q' [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'b2v_inst0/Queue_reg[1003]__0/Q' [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'b2v_inst0/Queue_reg[1002]__0/Q' [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'b2v_inst0/Queue_reg[1001]__0/Q' [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'b2v_inst0/Queue_reg[1000]__0/Q' [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'b2v_inst0/Queue_reg[999]__0/Q' [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'b2v_inst0/Queue_reg[998]__0/Q' [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'b2v_inst0/Queue_reg[997]__0/Q' [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'b2v_inst0/Queue_reg[996]__0/Q' [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'b2v_inst0/Queue_reg[995]__0/Q' [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'b2v_inst0/Queue_reg[994]__0/Q' [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'b2v_inst0/Queue_reg[993]__0/Q' [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'b2v_inst0/Queue_reg[992]__0/Q' [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'b2v_inst0/Queue_reg[991]__0/Q' [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'b2v_inst0/Queue_reg[990]__0/Q' [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'b2v_inst0/Queue_reg[989]__0/Q' [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'b2v_inst0/Queue_reg[988]__0/Q' [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'b2v_inst0/Queue_reg[987]__0/Q' [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'b2v_inst0/Queue_reg[986]__0/Q' [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'b2v_inst0/Queue_reg[985]__0/Q' [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'b2v_inst0/Queue_reg[984]__0/Q' [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'b2v_inst0/Queue_reg[983]__0/Q' [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'b2v_inst0/Queue_reg[982]__0/Q' [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'b2v_inst0/Queue_reg[981]__0/Q' [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'b2v_inst0/Queue_reg[980]__0/Q' [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'b2v_inst0/Queue_reg[979]__0/Q' [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'b2v_inst0/Queue_reg[978]__0/Q' [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'b2v_inst0/Queue_reg[977]__0/Q' [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'b2v_inst0/Queue_reg[976]__0/Q' [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'b2v_inst0/Queue_reg[975]__0/Q' [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'b2v_inst0/Queue_reg[974]__0/Q' [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+INFO: [Common 17-14] Message 'Synth 8-6859' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-6859' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/file/WRR_FIFO/Vivado/src/HD.v:27]
+INFO: [Common 17-14] Message 'Synth 8-6858' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-6858' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:45 ; elapsed = 00:01:07 . Memory (MB): peak = 1413.930 ; gain = 630.301
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |wrr_fifo__GB0 |           1|     30720|
+|2     |wrr_fifo__GB1 |           1|     15478|
+|3     |wrr_fifo__GB2 |           1|     16167|
+|4     |wrr_fifo__GB3 |           1|     22528|
+|5     |wrr_fifo__GB4 |           1|     15360|
+|6     |wrr_fifo__GB5 |           1|     31749|
+|7     |FIFO_top__GC0 |           1|      6057|
+|8     |WRR__GC0      |           1|        59|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:54 ; elapsed = 00:01:16 . Memory (MB): peak = 1413.930 ; gain = 630.301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FIFO_top_dut/b2v_inst1i_2/\Rout_PQ_reg[7][5][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FIFO_top_dut/b2v_inst1i_2/\Rout_PQ_reg[6][5][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FIFO_top_dut/b2v_inst1i_2/\Rout_PQ_reg[5][5][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FIFO_top_dut/b2v_inst1i_2/\Rout_PQ_reg[4][5][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FIFO_top_dut/b2v_inst1i_2/\Rout_PQ_reg[3][5][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FIFO_top_dut/b2v_inst1i_2/\Rout_PQ_reg[2][5][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FIFO_top_dut/b2v_inst1i_2/\Rout_PQ_reg[1][5][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FIFO_top_dut/b2v_inst1i_2/\Rout_PQ_reg[0][5][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FIFO_top_dut/b2v_inst1i_2/\Rout_PQ_reg[7][5][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FIFO_top_dut/b2v_inst1i_2/\Rout_PQ_reg[6][5][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FIFO_top_dut/b2v_inst1i_2/\Rout_PQ_reg[5][5][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FIFO_top_dut/b2v_inst1i_2/\Rout_PQ_reg[4][5][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FIFO_top_dut/b2v_inst1i_2/\Rout_PQ_reg[3][5][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FIFO_top_dut/b2v_inst1i_2/\Rout_PQ_reg[2][5][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FIFO_top_dut/b2v_inst1i_2/\Rout_PQ_reg[1][5][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FIFO_top_dut/b2v_inst1i_2/\Rout_PQ_reg[0][5][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FIFO_top_dut/b2v_inst1i_2/\Rout_PQ_reg[7][5][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FIFO_top_dut/b2v_inst1i_2/\Rout_PQ_reg[6][5][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FIFO_top_dut/b2v_inst1i_2/\Rout_PQ_reg[5][5][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FIFO_top_dut/b2v_inst1i_2/\Rout_PQ_reg[4][5][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FIFO_top_dut/b2v_inst1i_2/\Rout_PQ_reg[3][5][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FIFO_top_dut/b2v_inst1i_2/\Rout_PQ_reg[2][5][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FIFO_top_dut/b2v_inst1i_2/\Rout_PQ_reg[1][5][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FIFO_top_dut/b2v_inst1i_2/\Rout_PQ_reg[0][5][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FIFO_top_dut/b2v_inst1i_2/\Rout_PQ_reg[7][5][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FIFO_top_dut/b2v_inst1i_2/\Rout_PQ_reg[6][5][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FIFO_top_dut/b2v_inst1i_2/\Rout_PQ_reg[5][5][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FIFO_top_dut/b2v_inst1i_2/\Rout_PQ_reg[4][5][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FIFO_top_dut/b2v_inst1i_2/\Rout_PQ_reg[3][5][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FIFO_top_dut/b2v_inst1i_2/\Rout_PQ_reg[2][5][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FIFO_top_dut/b2v_inst1i_2/\Rout_PQ_reg[1][5][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FIFO_top_dut/b2v_inst1i_2/\Rout_PQ_reg[0][5][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FIFO_top_dut/b2v_inst1i_2/\Rout_PQ_reg[7][5][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FIFO_top_dut/b2v_inst1i_2/\Rout_PQ_reg[6][5][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FIFO_top_dut/b2v_inst1i_2/\Rout_PQ_reg[5][5][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FIFO_top_dut/b2v_inst1i_2/\Rout_PQ_reg[4][5][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FIFO_top_dut/b2v_inst1i_2/\Rout_PQ_reg[3][5][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FIFO_top_dut/b2v_inst1i_2/\Rout_PQ_reg[2][5][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FIFO_top_dut/b2v_inst1i_2/\Rout_PQ_reg[1][5][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FIFO_top_dut/b2v_inst1i_2/\Rout_PQ_reg[0][5][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FIFO_top_dut/b2v_inst1i_2/\Rout_PQ_reg[7][5][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FIFO_top_dut/b2v_inst1i_2/\Rout_PQ_reg[6][5][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FIFO_top_dut/b2v_inst1i_2/\Rout_PQ_reg[5][5][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FIFO_top_dut/b2v_inst1i_2/\Rout_PQ_reg[4][5][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FIFO_top_dut/b2v_inst1i_2/\Rout_PQ_reg[3][5][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FIFO_top_dut/b2v_inst1i_2/\Rout_PQ_reg[2][5][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FIFO_top_dut/b2v_inst1i_2/\Rout_PQ_reg[1][5][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FIFO_top_dut/b2v_inst1i_2/\Rout_PQ_reg[0][5][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FIFO_top_dut/b2v_inst1i_2/\Rout_PQ_reg[7][5][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FIFO_top_dut/b2v_inst1i_2/\Rout_PQ_reg[6][5][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FIFO_top_dut/b2v_inst1i_2/\Rout_PQ_reg[5][5][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FIFO_top_dut/b2v_inst1i_2/\Rout_PQ_reg[4][5][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FIFO_top_dut/b2v_inst1i_2/\Rout_PQ_reg[3][5][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FIFO_top_dut/b2v_inst1i_2/\Rout_PQ_reg[2][5][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FIFO_top_dut/b2v_inst1i_2/\Rout_PQ_reg[1][5][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FIFO_top_dut/b2v_inst1i_2/\Rout_PQ_reg[0][5][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FIFO_top_dut/b2v_inst1i_2/\Rout_PQ_reg[7][5][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FIFO_top_dut/b2v_inst1i_2/\Rout_PQ_reg[6][5][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FIFO_top_dut/b2v_inst1i_2/\Rout_PQ_reg[5][5][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FIFO_top_dut/b2v_inst1i_2/\Rout_PQ_reg[4][5][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FIFO_top_dut/b2v_inst1i_2/\Rout_PQ_reg[3][5][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FIFO_top_dut/b2v_inst1i_2/\Rout_PQ_reg[2][5][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FIFO_top_dut/b2v_inst1i_2/\Rout_PQ_reg[1][5][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FIFO_top_dut/b2v_inst1i_2/\Rout_PQ_reg[0][5][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FIFO_top_dut/b2v_inst1i_2/\Rout_PQ_reg[7][5][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FIFO_top_dut/b2v_inst1i_2/\Rout_PQ_reg[6][5][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FIFO_top_dut/b2v_inst1i_2/\Rout_PQ_reg[5][5][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FIFO_top_dut/b2v_inst1i_2/\Rout_PQ_reg[4][5][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FIFO_top_dut/b2v_inst1i_2/\Rout_PQ_reg[3][5][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FIFO_top_dut/b2v_inst1i_2/\Rout_PQ_reg[2][5][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FIFO_top_dut/b2v_inst1i_2/\Rout_PQ_reg[1][5][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FIFO_top_dut/b2v_inst1i_2/\Rout_PQ_reg[0][5][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FIFO_top_dut/b2v_inst1i_2/\Rout_PQ_reg[7][5][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FIFO_top_dut/b2v_inst1i_2/\Rout_PQ_reg[6][5][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FIFO_top_dut/b2v_inst1i_2/\Rout_PQ_reg[5][5][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FIFO_top_dut/b2v_inst1i_2/\Rout_PQ_reg[4][5][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FIFO_top_dut/b2v_inst1i_2/\Rout_PQ_reg[3][5][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FIFO_top_dut/b2v_inst1i_2/\Rout_PQ_reg[2][5][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FIFO_top_dut/b2v_inst1i_2/\Rout_PQ_reg[1][5][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FIFO_top_dut/b2v_inst1i_2/\Rout_PQ_reg[0][5][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FIFO_top_dut/b2v_inst1i_2/\Rout_PQ_reg[7][5][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FIFO_top_dut/b2v_inst1i_2/\Rout_PQ_reg[6][5][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FIFO_top_dut/b2v_inst1i_2/\Rout_PQ_reg[5][5][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FIFO_top_dut/b2v_inst1i_2/\Rout_PQ_reg[4][5][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FIFO_top_dut/b2v_inst1i_2/\Rout_PQ_reg[3][5][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FIFO_top_dut/b2v_inst1i_2/\Rout_PQ_reg[2][5][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FIFO_top_dut/b2v_inst1i_2/\Rout_PQ_reg[1][5][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FIFO_top_dut/b2v_inst1i_2/\Rout_PQ_reg[0][5][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FIFO_top_dut/b2v_inst1i_2/\Rout_PQ_reg[7][5][11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FIFO_top_dut/b2v_inst1i_2/\Rout_PQ_reg[6][5][11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FIFO_top_dut/b2v_inst1i_2/\Rout_PQ_reg[5][5][11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FIFO_top_dut/b2v_inst1i_2/\Rout_PQ_reg[4][5][11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FIFO_top_dut/b2v_inst1i_2/\Rout_PQ_reg[3][5][11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FIFO_top_dut/b2v_inst1i_2/\Rout_PQ_reg[2][5][11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FIFO_top_dut/b2v_inst1i_2/\Rout_PQ_reg[1][5][11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FIFO_top_dut/b2v_inst1i_2/\Rout_PQ_reg[0][5][11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FIFO_top_dut/b2v_inst1i_2/\Rout_PQ_reg[7][5][12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FIFO_top_dut/b2v_inst1i_2/\Rout_PQ_reg[6][5][12] )
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'FIFO_top_dut/b2v_inst1i_3/w_ptr_reg[7][3]' (FDCE) to 'FIFO_top_dut/b2v_inst1i_3/w_ptr_reg[6][3]'
+INFO: [Synth 8-3886] merging instance 'FIFO_top_dut/b2v_inst1i_3/w_ptr_reg[6][3]' (FDCE) to 'FIFO_top_dut/b2v_inst1i_3/w_ptr_reg[5][3]'
+INFO: [Synth 8-3886] merging instance 'FIFO_top_dut/b2v_inst1i_3/w_ptr_reg[4][3]' (FDCE) to 'FIFO_top_dut/b2v_inst1i_3/w_ptr_reg[5][3]'
+INFO: [Synth 8-3886] merging instance 'FIFO_top_dut/b2v_inst1i_3/w_ptr_reg[5][3]' (FDCE) to 'FIFO_top_dut/b2v_inst1i_3/w_ptr_reg[2][3]'
+INFO: [Synth 8-3886] merging instance 'FIFO_top_dut/b2v_inst1i_3/w_ptr_reg[1][3]' (FDCE) to 'FIFO_top_dut/b2v_inst1i_3/w_ptr_reg[2][3]'
+INFO: [Synth 8-3886] merging instance 'FIFO_top_dut/b2v_inst1i_3/w_ptr_reg[3][3]' (FDCE) to 'FIFO_top_dut/b2v_inst1i_3/w_ptr_reg[2][3]'
+INFO: [Synth 8-3886] merging instance 'FIFO_top_dut/b2v_inst1i_3/w_ptr_reg[1][0]' (FDCE) to 'FIFO_top_dut/b2v_inst1i_3/w_ptr_reg[7][0]'
+INFO: [Synth 8-3886] merging instance 'FIFO_top_dut/b2v_inst1i_3/w_ptr_reg[3][0]' (FDCE) to 'FIFO_top_dut/b2v_inst1i_3/w_ptr_reg[7][0]'
+INFO: [Synth 8-3886] merging instance 'FIFO_top_dut/b2v_inst1i_3/w_ptr_reg[2][0]' (FDCE) to 'FIFO_top_dut/b2v_inst1i_3/w_ptr_reg[7][0]'
+INFO: [Synth 8-3886] merging instance 'FIFO_top_dut/b2v_inst1i_3/w_ptr_reg[7][0]' (FDCE) to 'FIFO_top_dut/b2v_inst1i_3/w_ptr_reg[6][0]'
+INFO: [Synth 8-3886] merging instance 'FIFO_top_dut/b2v_inst1i_3/w_ptr_reg[6][0]' (FDCE) to 'FIFO_top_dut/b2v_inst1i_3/w_ptr_reg[5][0]'
+INFO: [Synth 8-3886] merging instance 'FIFO_top_dut/b2v_inst1i_3/w_ptr_reg[5][0]' (FDCE) to 'FIFO_top_dut/b2v_inst1i_3/w_ptr_reg[4][0]'
+INFO: [Synth 8-3886] merging instance 'FIFO_top_dut/b2v_inst1i_3/w_ptr_reg[1][1]' (FDCE) to 'FIFO_top_dut/b2v_inst1i_3/w_ptr_reg[7][1]'
+INFO: [Synth 8-3886] merging instance 'FIFO_top_dut/b2v_inst1i_3/w_ptr_reg[3][1]' (FDCE) to 'FIFO_top_dut/b2v_inst1i_3/w_ptr_reg[7][1]'
+INFO: [Synth 8-3886] merging instance 'FIFO_top_dut/b2v_inst1i_3/w_ptr_reg[2][1]' (FDCE) to 'FIFO_top_dut/b2v_inst1i_3/w_ptr_reg[7][1]'
+INFO: [Synth 8-3886] merging instance 'FIFO_top_dut/b2v_inst1i_3/w_ptr_reg[7][1]' (FDCE) to 'FIFO_top_dut/b2v_inst1i_3/w_ptr_reg[6][1]'
+INFO: [Synth 8-3886] merging instance 'FIFO_top_dut/b2v_inst1i_3/w_ptr_reg[6][1]' (FDCE) to 'FIFO_top_dut/b2v_inst1i_3/w_ptr_reg[5][1]'
+INFO: [Synth 8-3886] merging instance 'FIFO_top_dut/b2v_inst1i_3/w_ptr_reg[5][1]' (FDCE) to 'FIFO_top_dut/b2v_inst1i_3/w_ptr_reg[4][1]'
+INFO: [Synth 8-3886] merging instance 'FIFO_top_dut/b2v_inst1i_3/w_ptr_reg[1][2]' (FDCE) to 'FIFO_top_dut/b2v_inst1i_3/w_ptr_reg[7][2]'
+INFO: [Synth 8-3886] merging instance 'FIFO_top_dut/b2v_inst1i_3/w_ptr_reg[3][2]' (FDCE) to 'FIFO_top_dut/b2v_inst1i_3/w_ptr_reg[7][2]'
+INFO: [Synth 8-3886] merging instance 'FIFO_top_dut/b2v_inst1i_3/w_ptr_reg[2][2]' (FDCE) to 'FIFO_top_dut/b2v_inst1i_3/w_ptr_reg[7][2]'
+INFO: [Synth 8-3886] merging instance 'FIFO_top_dut/b2v_inst1i_3/w_ptr_reg[7][2]' (FDCE) to 'FIFO_top_dut/b2v_inst1i_3/w_ptr_reg[6][2]'
+INFO: [Synth 8-3886] merging instance 'FIFO_top_dut/b2v_inst1i_3/w_ptr_reg[6][2]' (FDCE) to 'FIFO_top_dut/b2v_inst1i_3/w_ptr_reg[5][2]'
+INFO: [Synth 8-3886] merging instance 'FIFO_top_dut/b2v_inst1i_3/w_ptr_reg[5][2]' (FDCE) to 'FIFO_top_dut/b2v_inst1i_3/w_ptr_reg[4][2]'
+INFO: [Synth 8-3886] merging instance 'FIFO_top_dut/i_0/b2v_inst2/i_1/data_width_reg[7]' (FDCE) to 'FIFO_top_dut/i_0/b2v_inst2/i_1/data_width_reg[0]'
+INFO: [Synth 8-3886] merging instance 'FIFO_top_dut/i_0/b2v_inst2/o_data_reg[0]' (FDCE) to 'FIFO_top_dut/i_0/b2v_inst2/o_data_reg[1]'
+INFO: [Synth 8-3886] merging instance 'FIFO_top_dut/i_0/b2v_inst2/o_data_reg[1]' (FDCE) to 'FIFO_top_dut/i_0/b2v_inst2/o_data_reg[2]'
+INFO: [Synth 8-3886] merging instance 'FIFO_top_dut/i_0/b2v_inst2/o_data_reg[2]' (FDCE) to 'FIFO_top_dut/i_0/b2v_inst2/o_data_reg[3]'
+INFO: [Synth 8-3886] merging instance 'FIFO_top_dut/i_0/b2v_inst2/o_data_reg[3]' (FDCE) to 'FIFO_top_dut/i_0/b2v_inst2/o_data_reg[4]'
+INFO: [Synth 8-3886] merging instance 'FIFO_top_dut/i_0/b2v_inst2/o_data_reg[4]' (FDCE) to 'FIFO_top_dut/i_0/b2v_inst2/o_data_reg[5]'
+INFO: [Synth 8-3886] merging instance 'FIFO_top_dut/i_0/b2v_inst2/o_data_reg[5]' (FDCE) to 'FIFO_top_dut/i_0/b2v_inst2/o_data_reg[6]'
+INFO: [Synth 8-3886] merging instance 'FIFO_top_dut/i_0/b2v_inst2/o_data_reg[6]' (FDCE) to 'FIFO_top_dut/i_0/b2v_inst2/o_data_reg[7]'
+INFO: [Synth 8-3886] merging instance 'FIFO_top_dut/i_0/b2v_inst2/addr_reg[0]' (FDCE) to 'FIFO_top_dut/i_0/b2v_inst2/prior_o_reg[0]'
+INFO: [Synth 8-3886] merging instance 'FIFO_top_dut/i_0/b2v_inst2/addr_reg[1]' (FDCE) to 'FIFO_top_dut/i_0/b2v_inst2/prior_o_reg[0]'
+INFO: [Synth 8-3886] merging instance 'FIFO_top_dut/i_0/b2v_inst2/addr_reg[2]' (FDCE) to 'FIFO_top_dut/i_0/b2v_inst2/prior_o_reg[0]'
+INFO: [Synth 8-3886] merging instance 'FIFO_top_dut/i_0/b2v_inst2/addr_reg[3]' (FDCE) to 'FIFO_top_dut/i_0/b2v_inst2/prior_o_reg[0]'
+INFO: [Synth 8-3886] merging instance 'FIFO_top_dut/i_0/b2v_inst2/i_1/data_width_reg[0]' (FDCE) to 'FIFO_top_dut/i_0/b2v_inst2/i_1/data_width_reg[1]'
+INFO: [Synth 8-3886] merging instance 'FIFO_top_dut/i_0/b2v_inst2/i_1/data_width_reg[1]' (FDCE) to 'FIFO_top_dut/i_0/b2v_inst2/i_1/data_width_reg[2]'
+INFO: [Synth 8-3886] merging instance 'FIFO_top_dut/i_0/b2v_inst2/i_1/data_width_reg[2]' (FDCE) to 'FIFO_top_dut/i_0/b2v_inst2/i_1/data_width_reg[3]'
+INFO: [Synth 8-3886] merging instance 'FIFO_top_dut/i_0/b2v_inst2/i_1/data_width_reg[3]' (FDCE) to 'FIFO_top_dut/i_0/b2v_inst2/i_1/data_width_reg[4]'
+INFO: [Synth 8-3886] merging instance 'FIFO_top_dut/i_0/b2v_inst2/i_1/data_width_reg[4]' (FDCE) to 'FIFO_top_dut/i_0/b2v_inst2/i_1/data_width_reg[5]'
+INFO: [Synth 8-3886] merging instance 'FIFO_top_dut/i_0/b2v_inst2/i_1/data_width_reg[5]' (FDCE) to 'FIFO_top_dut/i_0/b2v_inst2/i_1/data_width_reg[6]'
+INFO: [Synth 8-3886] merging instance 'FIFO_top_dut/i_0/b2v_inst2/prior_o_reg[0]' (FDCE) to 'FIFO_top_dut/i_0/b2v_inst2/prior_o_reg[1]'
+INFO: [Synth 8-3886] merging instance 'FIFO_top_dut/i_0/b2v_inst2/prior_o_reg[1]' (FDCE) to 'FIFO_top_dut/i_0/b2v_inst2/prior_o_reg[2]'
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:19 ; elapsed = 00:01:42 . Memory (MB): peak = 1413.930 ; gain = 630.301
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |FIFO_top__GC0 |           1|        80|
+|2     |WRR__GC0      |           1|        59|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:19 ; elapsed = 00:01:42 . Memory (MB): peak = 1413.930 ; gain = 630.301
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [D:/file/WRR_FIFO/Vivado/src/WRR.v:27]
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:22 ; elapsed = 00:01:45 . Memory (MB): peak = 1413.930 ; gain = 630.301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:22 ; elapsed = 00:01:45 . Memory (MB): peak = 1413.930 ; gain = 630.301
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:22 ; elapsed = 00:01:45 . Memory (MB): peak = 1413.930 ; gain = 630.301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:22 ; elapsed = 00:01:45 . Memory (MB): peak = 1413.930 ; gain = 630.301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:22 ; elapsed = 00:01:45 . Memory (MB): peak = 1413.930 ; gain = 630.301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:22 ; elapsed = 00:01:45 . Memory (MB): peak = 1413.930 ; gain = 630.301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |ila_0         |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |ila_0 |     1|
+|2     |BUFG  |     1|
+|3     |LUT1  |    49|
+|4     |LUT2  |     2|
+|5     |LUT3  |     4|
+|6     |LUT4  |     2|
+|7     |LUT5  |     3|
+|8     |LUT6  |    12|
+|9     |FDCE  |    29|
+|10    |LDP   |     1|
+|11    |IBUF  |     2|
+|12    |OBUF  |    16|
++------+------+------+
+
+Report Instance Areas: 
++------+---------------+---------+------+
+|      |Instance       |Module   |Cells |
++------+---------------+---------+------+
+|1     |top            |         |   121|
+|2     |  FIFO_top_dut |FIFO_top |    14|
+|3     |    b2v_inst0  |HD       |    14|
++------+---------------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:22 ; elapsed = 00:01:45 . Memory (MB): peak = 1413.930 ; gain = 630.301
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 200 critical warnings and 108 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:06 ; elapsed = 00:01:36 . Memory (MB): peak = 1413.930 ; gain = 339.824
+Synthesis Optimization Complete : Time (s): cpu = 00:01:23 ; elapsed = 00:01:46 . Memory (MB): peak = 1413.930 ; gain = 630.301
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1413.930 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1413.930 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  LDP => LDPE: 1 instance 
+
+INFO: [Common 17-83] Releasing license: Synthesis
+195 Infos, 207 Warnings, 200 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:29 ; elapsed = 00:01:52 . Memory (MB): peak = 1413.930 ; gain = 924.484
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.collectionResultDisplayLimit
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1413.930 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/file/WRR_FIFO/Vivado/pro/WRR/WRR.runs/synth_1/WRR.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file WRR_utilization_synth.rpt -pb WRR_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Jul 25 22:54:55 2024...

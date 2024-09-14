@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7z020clg400-2" LaunchTime="1721919522">
+  <File Type="BITSTR-BMM" Name="WRR_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="WRR_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="WRR_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="WRR_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="WRR.tcl"/>
+  <File Type="OPT-TIMING" Name="WRR_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="WRR_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="WRR_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="WRR_reports.tcl"/>
+  <File Type="OPT-DRC" Name="WRR_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="WRR.hwdef"/>
+  <File Type="PWROPT-DCP" Name="WRR_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="WRR_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="WRR_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="WRR_placed.dcp"/>
+  <File Type="PLACE-IO" Name="WRR_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="WRR_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="WRR_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="WRR_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="WRR_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="WRR_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="WRR_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="WRR_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="WRR_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="WRR.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="WRR_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="WRR_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="WRR_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="WRR.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="WRR_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="WRR_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="WRR_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="WRR_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="WRR_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="WRR_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="WRR_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="WRR.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="WRR_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="WRR_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="WRR_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="WRR_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="WRR_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="WRR_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="WRR_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="WRR_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="WRR_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="WRR_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="WRR_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="WRR_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="WRR_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="WRR_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="WRR_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="WRR_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="WRR_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="WRR_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="WRR_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="WRR_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="WRR_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="WRR.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="WRR_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="WRR.rbt"/>
+  <File Type="BITSTR-NKY" Name="WRR.nky"/>
+  <File Type="PDI-FILE" Name="WRR.pdi"/>
+  <File Type="RCFI_FILE" Name="WRR.rcfi"/>
+  <File Type="CFI_FILE" Name="WRR.cfi"/>
+  <File Type="RNPI_FILE" Name="WRR.rnpi"/>
+  <File Type="NPI_FILE" Name="WRR.npi"/>
+  <File Type="RBD_FILE" Name="WRR.rbd"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="WRR.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="WRR.sysdef"/>
+  <File Type="BG-BGN" Name="WRR.bgn"/>
+  <File Type="BG-DRC" Name="WRR.drc"/>
+  <File Type="RDI-RDI" Name="WRR.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../../src/Data_Out.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../src/FIFO_top.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../src/HD.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../src/priority_num.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../src/wrr_fifo.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../src/WRR.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="WRR"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_2">
+    <File Path="$PSRCDIR/constrs_2/new/WRR.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_2/new/WRR.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PPRDIR/../../WRR.tcl">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="UsedInSteps" Val="impl_1;WRITE_BITSTREAM;TCL.PRE"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
+      <Desc>Default settings for Implementation.</Desc>
+    </StratHandle>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design" EnableStepBool="1"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream" PreStepTclHook="$PPRDIR/../../WRR.tcl"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="ila_0"/>
+</GenRun>

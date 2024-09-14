@@ -1,0 +1,16 @@
+Fitter Status : Successful - Wed Jul 24 02:54:10 2024
+Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Standard Edition
+Revision Name : WRR_FIFO
+Top-level Entity Name : FIFO_top
+Family : Cyclone IV E
+Device : EP4CE6E22C6
+Timing Models : Final
+Total logic elements : 3,085 / 6,272 ( 49 % )
+    Total combinational functions : 3,047 / 6,272 ( 49 % )
+    Dedicated logic registers : 143 / 6,272 ( 2 % )
+Total registers : 143
+Total pins : 60 / 92 ( 65 % )
+Total virtual pins : 0
+Total memory bits : 65,536 / 276,480 ( 24 % )
+Embedded Multiplier 9-bit elements : 0 / 30 ( 0 % )
+Total PLLs : 0 / 2 ( 0 % )

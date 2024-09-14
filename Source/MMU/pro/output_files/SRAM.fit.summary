@@ -1,0 +1,16 @@
+Fitter Status : Successful - Sun May 05 13:46:38 2024
+Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Standard Edition
+Revision Name : SRAM
+Top-level Entity Name : SRAM
+Family : Cyclone IV E
+Device : EP4CE10F17C8
+Timing Models : Final
+Total logic elements : 2,983 / 10,320 ( 29 % )
+    Total combinational functions : 1,372 / 10,320 ( 13 % )
+    Dedicated logic registers : 2,619 / 10,320 ( 25 % )
+Total registers : 2619
+Total pins : 26 / 180 ( 14 % )
+Total virtual pins : 0
+Total memory bits : 282,624 / 423,936 ( 67 % )
+Embedded Multiplier 9-bit elements : 0 / 46 ( 0 % )
+Total PLLs : 0 / 2 ( 0 % )

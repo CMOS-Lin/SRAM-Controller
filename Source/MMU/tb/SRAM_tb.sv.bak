@@ -1,0 +1,97 @@
+/*
+ * @Descripttion:单端口SRAM
+	功能:设计一片单端口SRAM，存储容量为:256bKit，数据位宽64，地址深度2^8 
+ * @Author: Zhiyong Lin
+ * @version: 
+ * @Date: 2024-03-17 18:16:50
+ * @LastEditors: Zhiyong Lin
+ * @LastEditTime: 2024-04-13 19:56:35
+ */
+
+`timescale 1ns/1ns
+
+module SRAM_tb();
+localparam DATA_BIT=64;		// 数据位宽
+localparam ADDR_BIT=8; 		// 地址位宽	
+localparam TEXT_NUM=20;		// 测试次数
+
+reg     					 	clk;
+reg     					 	wr_ena ;	// 写使能信号
+reg                        		rd_ena ;	// 读使能信号
+reg  [ADDR_BIT-1:0]	 			addr   ;	// 地址      
+reg  [DATA_BIT-1:0]    			wr_data;	// 数据输入端
+wire [DATA_BIT-1:0]    			rd_data;	// 数据输出端
+
+SRAM SRAM_dut(
+	.clk			(clk    ),		
+	.wr_ena 		(wr_ena ),
+	.rd_ena 		(rd_ena ),
+	.addr   		(addr   ),
+	.wr_data		(wr_data),
+	.rd_data		(rd_data)
+);
+
+// 记录读写操作测试数据结构体
+typedef struct packed{
+    bit  				wr_ena;
+    bit [ADDR_BIT-1:0] 	addr;
+	bit [DATA_BIT-1:0]  wr_data;
+	bit [DATA_BIT-1:0]  rd_data;
+} message;
+
+message [TEXT_NUM-1:0]m;
+
+integer i,j;
+
+always begin
+	#5 clk = ~clk;
+end
+
+initial begin
+	// 端口初始化
+	clk = 1'b0;
+	wr_ena = 1'b0;
+	rd_ena = 1'b0;
+	#5
+
+	// 读写操作
+	for (i=0 ; i < TEXT_NUM ; i=i+1) begin
+		// 写操作
+		wr_ena = {$random} % 2;
+		addr = {$random} % (1 << ADDR_BIT);
+		wr_data = {2{{$random} % 32}};
+		m[i].wr_ena = wr_ena;
+		m[i].addr = addr;
+		m[i].wr_data = wr_data;
+		#10;
+		// 读操作
+		wr_ena = 1'b0;
+		rd_ena = 1'b1;
+		addr =  m[i].addr;		
+		#8;
+		m[i].rd_data = rd_data;
+		#2;
+		rd_ena = 1'b0;
+	end
+
+	// 检验读写数据
+	for (j=0 ; j < TEXT_NUM ; j=j+1) begin	
+		$display("NUM:%d,wr_ena:%d,addr:%d",j,m[j].wr_ena,m[j].addr);
+		$display("wr_data:%d,rd_data:%d",m[j].wr_data,m[j].rd_data);
+		if(m[j].wr_ena) begin
+			if(m[j].wr_data == m[j].rd_data) begin
+				$display("success!");
+			end else begin
+				$display("fail!");
+			end
+		end else begin
+			if(m[j].rd_data == 0) begin
+				$display("success!");
+			end else begin
+				$display("fail!");
+			end
+		end
+	end
+end
+
+endmodule

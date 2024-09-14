@@ -1,0 +1,8 @@
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+vlog -incr -sv -work work ../src/SRAM.v ../src/MMU.v ../tb/MMU_tb.sv -l ../opt/compile.log 
+-- Skipping module SRAM
+-- Compiling module MMU
+-- Compiling module MMU_tb
+
+Top level modules:
+	MMU_tb

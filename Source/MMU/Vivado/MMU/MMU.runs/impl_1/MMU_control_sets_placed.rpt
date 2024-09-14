@@ -1,0 +1,154 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Wed Jul 24 19:35:25 2024
+| Host         : LAPTOP-EQBIQTIM running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file MMU_control_sets_placed.rpt
+| Design       : MMU
+| Device       : xc7z020
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    76 |
+|    Minimum number of control sets                        |    76 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    69 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    76 |
+| >= 0 to < 4        |    10 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |    65 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     1 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               0 |            0 |
+| No           | No                    | Yes                    |              47 |           15 |
+| No           | Yes                   | No                     |               5 |            3 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |              15 |           13 |
+| Yes          | Yes                   | No                     |             512 |          118 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------------+------------------------------+------------------------------+------------------+----------------+
+|      Clock Signal     |         Enable Signal        |       Set/Reset Signal       | Slice Load Count | Bel Load Count |
++-----------------------+------------------------------+------------------------------+------------------+----------------+
+|  stop_reg_i_2_n_0     |                              | SRAM_dut/AR[0]               |                1 |              1 |
+|  clk_IBUF_BUFG        | sram_table[1][0]_i_1_n_0     | SRAM_dut/AR[0]               |                1 |              1 |
+|  clk_IBUF_BUFG        | sram_table[3][0]_i_1_n_0     | SRAM_dut/AR[0]               |                1 |              1 |
+|  clk_IBUF_BUFG        | sram_table[5][0]_i_1_n_0     | SRAM_dut/AR[0]               |                1 |              1 |
+|  clk_IBUF_BUFG        | sram_table[6][0]_i_1_n_0     | SRAM_dut/AR[0]               |                1 |              1 |
+|  clk_IBUF_BUFG        | sram_table[7][0]_i_1_n_0     | SRAM_dut/AR[0]               |                1 |              1 |
+|  clk_IBUF_BUFG        | sram_table[4][0]_i_1_n_0     | SRAM_dut/AR[0]               |                1 |              1 |
+|  clk_IBUF_BUFG        | sram_table[2][0]_i_1_n_0     | SRAM_dut/AR[0]               |                1 |              1 |
+|  point_reg[3]_i_2_n_0 |                              | point_reg[3]_i_3_n_0         |                1 |              1 |
+|  point_reg[3]_i_2_n_0 |                              | SRAM_dut/AR[0]               |                1 |              3 |
+|  clk_IBUF_BUFG        | SRAM_dut/SRAM[13][7]_i_2_n_0 | SRAM_dut/SRAM[13][7]_i_1_n_0 |                2 |              8 |
+|  clk_IBUF_BUFG        | SRAM_dut/SRAM[10][7]_i_2_n_0 | SRAM_dut/SRAM[10][7]_i_1_n_0 |                1 |              8 |
+|  clk_IBUF_BUFG        | SRAM_dut/SRAM[14][7]_i_2_n_0 | SRAM_dut/SRAM[14][7]_i_1_n_0 |                2 |              8 |
+|  clk_IBUF_BUFG        | SRAM_dut/SRAM[20][7]_i_2_n_0 | SRAM_dut/SRAM[20][7]_i_1_n_0 |                1 |              8 |
+|  clk_IBUF_BUFG        | SRAM_dut/SRAM[11][7]_i_2_n_0 | SRAM_dut/SRAM[11][7]_i_1_n_0 |                1 |              8 |
+|  clk_IBUF_BUFG        | SRAM_dut/SRAM[16][7]_i_2_n_0 | SRAM_dut/SRAM[16][7]_i_1_n_0 |                2 |              8 |
+|  clk_IBUF_BUFG        | SRAM_dut/SRAM[1][7]_i_2_n_0  | SRAM_dut/SRAM[1][7]_i_1_n_0  |                2 |              8 |
+|  clk_IBUF_BUFG        | SRAM_dut/SRAM[15][7]_i_2_n_0 | SRAM_dut/SRAM[15][7]_i_1_n_0 |                1 |              8 |
+|  clk_IBUF_BUFG        | SRAM_dut/SRAM[12][7]_i_2_n_0 | SRAM_dut/SRAM[12][7]_i_1_n_0 |                1 |              8 |
+|  clk_IBUF_BUFG        | SRAM_dut/SRAM[17][7]_i_2_n_0 | SRAM_dut/SRAM[17][7]_i_1_n_0 |                1 |              8 |
+|  clk_IBUF_BUFG        | SRAM_dut/SRAM[18][7]_i_2_n_0 | SRAM_dut/SRAM[18][7]_i_1_n_0 |                2 |              8 |
+|  clk_IBUF_BUFG        | SRAM_dut/SRAM[28][7]_i_2_n_0 | SRAM_dut/SRAM[28][7]_i_1_n_0 |                2 |              8 |
+|  clk_IBUF_BUFG        | SRAM_dut/SRAM[42][7]_i_2_n_0 | SRAM_dut/SRAM[42][7]_i_1_n_0 |                2 |              8 |
+|  clk_IBUF_BUFG        | SRAM_dut/SRAM[44][7]_i_2_n_0 | SRAM_dut/SRAM[44][7]_i_1_n_0 |                2 |              8 |
+|  clk_IBUF_BUFG        | SRAM_dut/SRAM[30][7]_i_2_n_0 | SRAM_dut/SRAM[30][7]_i_1_n_0 |                2 |              8 |
+|  clk_IBUF_BUFG        | SRAM_dut/SRAM[3][7]_i_2_n_0  | SRAM_dut/SRAM[3][7]_i_1_n_0  |                1 |              8 |
+|  clk_IBUF_BUFG        | SRAM_dut/SRAM[26][7]_i_2_n_0 | SRAM_dut/SRAM[26][7]_i_1_n_0 |                2 |              8 |
+|  clk_IBUF_BUFG        | SRAM_dut/SRAM[38][7]_i_2_n_0 | SRAM_dut/SRAM[38][7]_i_1_n_0 |                2 |              8 |
+|  clk_IBUF_BUFG        | SRAM_dut/SRAM[36][7]_i_2_n_0 | SRAM_dut/SRAM[36][7]_i_1_n_0 |                3 |              8 |
+|  clk_IBUF_BUFG        | SRAM_dut/SRAM[23][7]_i_2_n_0 | SRAM_dut/SRAM[23][7]_i_1_n_0 |                2 |              8 |
+|  clk_IBUF_BUFG        | SRAM_dut/SRAM[27][7]_i_2_n_0 | SRAM_dut/SRAM[27][7]_i_1_n_0 |                3 |              8 |
+|  clk_IBUF_BUFG        | SRAM_dut/SRAM[22][7]_i_2_n_0 | SRAM_dut/SRAM[22][7]_i_1_n_0 |                2 |              8 |
+|  clk_IBUF_BUFG        | SRAM_dut/SRAM[33][7]_i_2_n_0 | SRAM_dut/SRAM[33][7]_i_1_n_0 |                2 |              8 |
+|  clk_IBUF_BUFG        | SRAM_dut/SRAM[35][7]_i_2_n_0 | SRAM_dut/SRAM[35][7]_i_1_n_0 |                2 |              8 |
+|  clk_IBUF_BUFG        | SRAM_dut/SRAM[24][7]_i_2_n_0 | SRAM_dut/SRAM[24][7]_i_1_n_0 |                1 |              8 |
+|  clk_IBUF_BUFG        | SRAM_dut/SRAM[31][7]_i_2_n_0 | SRAM_dut/SRAM[31][7]_i_1_n_0 |                3 |              8 |
+|  clk_IBUF_BUFG        | SRAM_dut/SRAM[37][7]_i_2_n_0 | SRAM_dut/SRAM[37][7]_i_1_n_0 |                2 |              8 |
+|  clk_IBUF_BUFG        | SRAM_dut/SRAM[34][7]_i_2_n_0 | SRAM_dut/SRAM[34][7]_i_1_n_0 |                2 |              8 |
+|  clk_IBUF_BUFG        | SRAM_dut/SRAM[40][7]_i_2_n_0 | SRAM_dut/SRAM[40][7]_i_1_n_0 |                2 |              8 |
+|  clk_IBUF_BUFG        | SRAM_dut/SRAM[32][7]_i_2_n_0 | SRAM_dut/SRAM[32][7]_i_1_n_0 |                2 |              8 |
+|  clk_IBUF_BUFG        | SRAM_dut/SRAM[41][7]_i_2_n_0 | SRAM_dut/SRAM[41][7]_i_1_n_0 |                2 |              8 |
+|  clk_IBUF_BUFG        | SRAM_dut/SRAM[2][7]_i_2_n_0  | SRAM_dut/SRAM[2][7]_i_1_n_0  |                1 |              8 |
+|  clk_IBUF_BUFG        | SRAM_dut/SRAM[25][7]_i_2_n_0 | SRAM_dut/SRAM[25][7]_i_1_n_0 |                2 |              8 |
+|  clk_IBUF_BUFG        | SRAM_dut/SRAM[21][7]_i_2_n_0 | SRAM_dut/SRAM[21][7]_i_1_n_0 |                4 |              8 |
+|  clk_IBUF_BUFG        | SRAM_dut/SRAM[39][7]_i_2_n_0 | SRAM_dut/SRAM[39][7]_i_1_n_0 |                2 |              8 |
+|  clk_IBUF_BUFG        | SRAM_dut/SRAM[29][7]_i_2_n_0 | SRAM_dut/SRAM[29][7]_i_1_n_0 |                2 |              8 |
+|  clk_IBUF_BUFG        | SRAM_dut/SRAM[43][7]_i_2_n_0 | SRAM_dut/SRAM[43][7]_i_1_n_0 |                2 |              8 |
+|  clk_IBUF_BUFG        | SRAM_dut/SRAM[61][7]_i_2_n_0 | SRAM_dut/SRAM[61][7]_i_1_n_0 |                2 |              8 |
+|  clk_IBUF_BUFG        | SRAM_dut/SRAM[47][7]_i_2_n_0 | SRAM_dut/SRAM[47][7]_i_1_n_0 |                1 |              8 |
+|  clk_IBUF_BUFG        | SRAM_dut/SRAM[48][7]_i_2_n_0 | SRAM_dut/SRAM[48][7]_i_1_n_0 |                3 |              8 |
+|  clk_IBUF_BUFG        | SRAM_dut/SRAM[50][7]_i_2_n_0 | SRAM_dut/SRAM[50][7]_i_1_n_0 |                2 |              8 |
+|  clk_IBUF_BUFG        | SRAM_dut/SRAM[46][7]_i_2_n_0 | SRAM_dut/SRAM[46][7]_i_1_n_0 |                2 |              8 |
+|  clk_IBUF_BUFG        | SRAM_dut/SRAM[6][7]_i_2_n_0  | SRAM_dut/SRAM[6][7]_i_1_n_0  |                1 |              8 |
+|  clk_IBUF_BUFG        | SRAM_dut/SRAM[7][7]_i_2_n_0  | SRAM_dut/SRAM[7][7]_i_1_n_0  |                3 |              8 |
+|  clk_IBUF_BUFG        | SRAM_dut/SRAM[52][7]_i_2_n_0 | SRAM_dut/SRAM[52][7]_i_1_n_0 |                2 |              8 |
+|  clk_IBUF_BUFG        | SRAM_dut/SRAM[5][7]_i_2_n_0  | SRAM_dut/SRAM[5][7]_i_1_n_0  |                2 |              8 |
+|  clk_IBUF_BUFG        | SRAM_dut/SRAM[53][7]_i_2_n_0 | SRAM_dut/SRAM[53][7]_i_1_n_0 |                2 |              8 |
+|  clk_IBUF_BUFG        | SRAM_dut/SRAM[63][7]_i_2_n_0 | SRAM_dut/SRAM[63][7]_i_1_n_0 |                2 |              8 |
+|  clk_IBUF_BUFG        | SRAM_dut/SRAM[54][7]_i_2_n_0 | SRAM_dut/SRAM[54][7]_i_1_n_0 |                2 |              8 |
+|  clk_IBUF_BUFG        | SRAM_dut/SRAM[59][7]_i_2_n_0 | SRAM_dut/SRAM[59][7]_i_1_n_0 |                3 |              8 |
+|  clk_IBUF_BUFG        | SRAM_dut/SRAM[51][7]_i_2_n_0 | SRAM_dut/SRAM[51][7]_i_1_n_0 |                2 |              8 |
+|  clk_IBUF_BUFG        | SRAM_dut/SRAM[60][7]_i_2_n_0 | SRAM_dut/SRAM[60][7]_i_1_n_0 |                2 |              8 |
+|  clk_IBUF_BUFG        | SRAM_dut/SRAM[56][7]_i_2_n_0 | SRAM_dut/SRAM[56][7]_i_1_n_0 |                2 |              8 |
+|  clk_IBUF_BUFG        | SRAM_dut/SRAM[8][7]_i_2_n_0  | SRAM_dut/SRAM[8][7]_i_1_n_0  |                1 |              8 |
+|  clk_IBUF_BUFG        | SRAM_dut/SRAM[4][7]_i_2_n_0  | SRAM_dut/SRAM[4][7]_i_1_n_0  |                1 |              8 |
+|  clk_IBUF_BUFG        | SRAM_dut/SRAM[55][7]_i_2_n_0 | SRAM_dut/SRAM[55][7]_i_1_n_0 |                2 |              8 |
+|  clk_IBUF_BUFG        | SRAM_dut/SRAM[49][7]_i_2_n_0 | SRAM_dut/SRAM[49][7]_i_1_n_0 |                2 |              8 |
+|  clk_IBUF_BUFG        | SRAM_dut/SRAM[62][7]_i_2_n_0 | SRAM_dut/SRAM[62][7]_i_1_n_0 |                2 |              8 |
+|  clk_IBUF_BUFG        | SRAM_dut/SRAM[45][7]_i_2_n_0 | SRAM_dut/SRAM[45][7]_i_1_n_0 |                1 |              8 |
+|  clk_IBUF_BUFG        | SRAM_dut/SRAM[57][7]_i_2_n_0 | SRAM_dut/SRAM[57][7]_i_1_n_0 |                1 |              8 |
+|  clk_IBUF_BUFG        | SRAM_dut/SRAM[58][7]_i_2_n_0 | SRAM_dut/SRAM[58][7]_i_1_n_0 |                1 |              8 |
+|  clk_IBUF_BUFG        | SRAM_dut/rd_data[7]_i_1_n_0  | SRAM_dut/AR[0]               |                6 |              8 |
+|  clk_IBUF_BUFG        | SRAM_dut/SRAM[0][7]_i_2_n_0  | SRAM_dut/SRAM[0][7]_i_1_n_0  |                1 |              8 |
+|  clk_IBUF_BUFG        | SRAM_dut/SRAM[19][7]_i_2_n_0 | SRAM_dut/SRAM[19][7]_i_1_n_0 |                1 |              8 |
+|  clk_IBUF_BUFG        | SRAM_dut/SRAM[9][7]_i_2_n_0  | SRAM_dut/SRAM[9][7]_i_1_n_0  |                2 |              8 |
+|  clk_IBUF_BUFG        |                              | SRAM_dut/AR[0]               |               15 |             47 |
++-----------------------+------------------------------+------------------------------+------------------+----------------+
+
+

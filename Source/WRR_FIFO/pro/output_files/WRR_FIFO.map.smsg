@@ -1,0 +1,2 @@
+Info (10281): Verilog HDL Declaration information at FIFO_top.v(12): object "DATA_WIDTH" differs only in case from object "data_width" in the same scope File: D:/file/WRR_FIFO/src/FIFO_top.v Line: 12
+Info (10281): Verilog HDL Declaration information at Data_Out.v(11): object "DATA_WIDTH" differs only in case from object "data_width" in the same scope File: D:/file/WRR_FIFO/src/Data_Out.v Line: 11

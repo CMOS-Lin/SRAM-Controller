@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Thu Jul 25 21:59:12 2024
+# Process ID: 8356
+# Current directory: D:/file/WRR_FIFO/Vivado/pro/WRR/WRR.runs/impl_1
+# Command line: vivado.exe -log WRR.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source WRR.tcl -notrace
+# Log file: D:/file/WRR_FIFO/Vivado/pro/WRR/WRR.runs/impl_1/WRR.vdi
+# Journal file: D:/file/WRR_FIFO/Vivado/pro/WRR/WRR.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source WRR.tcl -notrace

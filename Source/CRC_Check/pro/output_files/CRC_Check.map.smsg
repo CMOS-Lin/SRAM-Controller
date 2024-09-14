@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at CRC_Check.v(86): always construct contains both blocking and non-blocking assignments File: D:/file/CRC_Check/src/CRC_Check.v Line: 86

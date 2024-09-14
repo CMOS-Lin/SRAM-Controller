@@ -1,0 +1,112 @@
+# Reading D:/softs/ModelSim/tcl/vsim/pref.tcl 
+# //  ModelSim SE-64 10.1c Jul 28 2012 
+# //
+# //  Copyright 1991-2012 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# vsim -do {add wave -position insertpoint sim:MMU_tb/MMU_dut/*; run -all} -l ../opt/sim.log -lib work -gui -voptargs=+acc=npr top 
+# Loading sv_std.std
+# Loading work.MMU_tb(fast)
+# Loading work.MMU(fast)
+# Loading work.SRAM(fast)
+# ** Warning: (vsim-3015) ../tb/MMU_tb.sv(39): [PCDPC] - Port size (3 or 3) does not match connection size (4) for port 'addr'. The port definition is at: ../src/MMU.v(21).
+# 
+#         Region: /MMU_tb/MMU_dut
+# add wave -position insertpoint sim:MMU_tb/MMU_dut/* 
+#  run -all 
+# At time                    0, start = 0, rw_ena = 0, frame = 0,wr_data = 00,rd_dta = 00,data_table_out = 0Xxxxx
+# At time                10000, start = 0, rw_ena = 0, frame = 0,wr_data = 00,rd_dta = 00,data_table_out = 000000
+# At time                15000, start = 0, rw_ena = 0, frame = 0,wr_data = 00,rd_dta = 00,data_table_out = 000111
+# At time                35000, start = 1, rw_ena = 0, frame = 1,wr_data = 08,rd_dta = 00,data_table_out = 000111
+# At time                45000, start = 1, rw_ena = 0, frame = 1,wr_data = 33,rd_dta = 00,data_table_out = 001110
+# At time                55000, start = 1, rw_ena = 0, frame = 1,wr_data = ac,rd_dta = 00,data_table_out = 001110
+# At time                65000, start = 1, rw_ena = 0, frame = 1,wr_data = 34,rd_dta = 00,data_table_out = 001110
+# At time                75000, start = 1, rw_ena = 0, frame = 1,wr_data = 99,rd_dta = 00,data_table_out = 001110
+# At time                85000, start = 1, rw_ena = 0, frame = 1,wr_data = 41,rd_dta = 00,data_table_out = 001110
+# At time                95000, start = 1, rw_ena = 0, frame = 1,wr_data = 0c,rd_dta = 00,data_table_out = 001110
+# At time               105000, start = 1, rw_ena = 0, frame = 1,wr_data = 14,rd_dta = 00,data_table_out = 001110
+# At time               115000, start = 0, rw_ena = 0, frame = 1,wr_data = 14,rd_dta = 00,data_table_out = 001110
+# At time               135000, start = 1, rw_ena = 0, frame = 1,wr_data = 99,rd_dta = 00,data_table_out = 001110
+# At time               145000, start = 1, rw_ena = 0, frame = 1,wr_data = 30,rd_dta = 00,data_table_out = 011100
+# At time               155000, start = 1, rw_ena = 0, frame = 1,wr_data = 86,rd_dta = 00,data_table_out = 011100
+# At time               165000, start = 1, rw_ena = 0, frame = 1,wr_data = 35,rd_dta = 00,data_table_out = 011100
+# At time               175000, start = 1, rw_ena = 0, frame = 1,wr_data = 77,rd_dta = 00,data_table_out = 011100
+# At time               185000, start = 1, rw_ena = 0, frame = 1,wr_data = ba,rd_dta = 00,data_table_out = 011100
+# At time               195000, start = 1, rw_ena = 0, frame = 1,wr_data = 0a,rd_dta = 00,data_table_out = 011100
+# At time               205000, start = 1, rw_ena = 0, frame = 1,wr_data = 41,rd_dta = 00,data_table_out = 011100
+# At time               215000, start = 0, rw_ena = 0, frame = 1,wr_data = 41,rd_dta = 00,data_table_out = 011100
+# At time               235000, start = 1, rw_ena = 0, frame = 1,wr_data = 87,rd_dta = 00,data_table_out = 011100
+# At time               245000, start = 1, rw_ena = 0, frame = 1,wr_data = 08,rd_dta = 00,data_table_out = 011100
+# At time               255000, start = 1, rw_ena = 0, frame = 1,wr_data = 9b,rd_dta = 00,data_table_out = 011100
+# At time               265000, start = 1, rw_ena = 0, frame = 1,wr_data = 75,rd_dta = 00,data_table_out = 011100
+# At time               275000, start = 1, rw_ena = 0, frame = 1,wr_data = 56,rd_dta = 00,data_table_out = 011100
+# At time               285000, start = 1, rw_ena = 0, frame = 1,wr_data = 2a,rd_dta = 00,data_table_out = 011100
+# At time               295000, start = 1, rw_ena = 0, frame = 1,wr_data = 28,rd_dta = 00,data_table_out = 011100
+# At time               305000, start = 1, rw_ena = 0, frame = 1,wr_data = a9,rd_dta = 00,data_table_out = 011100
+# At time               315000, start = 0, rw_ena = 0, frame = 1,wr_data = a9,rd_dta = 00,data_table_out = 011100
+# At time               335000, start = 1, rw_ena = 0, frame = 1,wr_data = 98,rd_dta = 00,data_table_out = 011100
+# At time               345000, start = 1, rw_ena = 0, frame = 1,wr_data = 32,rd_dta = 00,data_table_out = 011100
+# At time               355000, start = 1, rw_ena = 0, frame = 1,wr_data = a6,rd_dta = 00,data_table_out = 011100
+# At time               365000, start = 1, rw_ena = 0, frame = 1,wr_data = 90,rd_dta = 00,data_table_out = 011100
+# At time               375000, start = 1, rw_ena = 0, frame = 1,wr_data = 50,rd_dta = 00,data_table_out = 011100
+# At time               385000, start = 1, rw_ena = 0, frame = 1,wr_data = 0a,rd_dta = 00,data_table_out = 011100
+# At time               395000, start = 1, rw_ena = 0, frame = 1,wr_data = 00,rd_dta = 00,data_table_out = 011100
+# At time               405000, start = 1, rw_ena = 0, frame = 1,wr_data = 69,rd_dta = 00,data_table_out = 011100
+# At time               415000, start = 0, rw_ena = 0, frame = 1,wr_data = 69,rd_dta = 00,data_table_out = 011100
+# At time               435000, start = 1, rw_ena = 1, frame = 1,wr_data = 69,rd_dta = 00,data_table_out = 011100
+# At time               455000, start = 1, rw_ena = 1, frame = 1,wr_data = 69,rd_dta = 87,data_table_out = 011100
+# At time               465000, start = 1, rw_ena = 1, frame = 1,wr_data = 69,rd_dta = 08,data_table_out = 011100
+# At time               475000, start = 1, rw_ena = 1, frame = 1,wr_data = 69,rd_dta = 9b,data_table_out = 011100
+# At time               485000, start = 1, rw_ena = 1, frame = 1,wr_data = 69,rd_dta = 75,data_table_out = 011100
+# At time               495000, start = 1, rw_ena = 1, frame = 1,wr_data = 69,rd_dta = 56,data_table_out = 011100
+# At time               505000, start = 1, rw_ena = 1, frame = 1,wr_data = 69,rd_dta = 2a,data_table_out = 011100
+# At time               515000, start = 1, rw_ena = 1, frame = 1,wr_data = 69,rd_dta = 28,data_table_out = 011100
+# At time               525000, start = 1, rw_ena = 1, frame = 1,wr_data = 69,rd_dta = a9,data_table_out = 011100
+# At time               535000, start = 0, rw_ena = 1, frame = 1,wr_data = 69,rd_dta = 00,data_table_out = 011100
+# At time               555000, start = 1, rw_ena = 0, frame = 1,wr_data = 98,rd_dta = 00,data_table_out = 011100
+# At time               565000, start = 1, rw_ena = 0, frame = 1,wr_data = 3a,rd_dta = 00,data_table_out = 011100
+# At time               575000, start = 1, rw_ena = 0, frame = 1,wr_data = 06,rd_dta = 00,data_table_out = 011100
+# At time               585000, start = 1, rw_ena = 0, frame = 1,wr_data = 95,rd_dta = 00,data_table_out = 011100
+# At time               595000, start = 1, rw_ena = 0, frame = 1,wr_data = 99,rd_dta = 00,data_table_out = 011100
+# At time               605000, start = 1, rw_ena = 0, frame = 1,wr_data = 2a,rd_dta = 00,data_table_out = 011100
+# At time               615000, start = 1, rw_ena = 0, frame = 1,wr_data = 08,rd_dta = 00,data_table_out = 011100
+# At time               625000, start = 1, rw_ena = 0, frame = 1,wr_data = 89,rd_dta = 00,data_table_out = 011100
+# At time               635000, start = 0, rw_ena = 0, frame = 1,wr_data = 89,rd_dta = 00,data_table_out = 011100
+# At time               655000, start = 1, rw_ena = 0, frame = 1,wr_data = 90,rd_dta = 00,data_table_out = 011100
+# At time               665000, start = 1, rw_ena = 0, frame = 1,wr_data = d1,rd_dta = 00,data_table_out = 011000
+# At time               675000, start = 1, rw_ena = 0, frame = 1,wr_data = 32,rd_dta = 00,data_table_out = 011000
+# At time               685000, start = 1, rw_ena = 0, frame = 1,wr_data = 55,rd_dta = 00,data_table_out = 011000
+# At time               695000, start = 1, rw_ena = 0, frame = 1,wr_data = a7,rd_dta = 00,data_table_out = 011000
+# At time               705000, start = 1, rw_ena = 0, frame = 1,wr_data = b2,rd_dta = 00,data_table_out = 011000
+# At time               715000, start = 1, rw_ena = 0, frame = 1,wr_data = 65,rd_dta = 00,data_table_out = 011000
+# At time               725000, start = 1, rw_ena = 0, frame = 1,wr_data = 96,rd_dta = 00,data_table_out = 011000
+# At time               735000, start = 0, rw_ena = 0, frame = 1,wr_data = 96,rd_dta = 00,data_table_out = 011000
+# At time               755000, start = 1, rw_ena = 1, frame = 1,wr_data = 96,rd_dta = 00,data_table_out = 011000
+# At time               765000, start = 1, rw_ena = 1, frame = 1,wr_data = 96,rd_dta = 00,data_table_out = 011001
+# At time               775000, start = 1, rw_ena = 1, frame = 1,wr_data = 96,rd_dta = 08,data_table_out = 011001
+# At time               785000, start = 1, rw_ena = 1, frame = 1,wr_data = 96,rd_dta = 33,data_table_out = 011001
+# At time               795000, start = 1, rw_ena = 1, frame = 1,wr_data = 96,rd_dta = ac,data_table_out = 011001
+# At time               805000, start = 1, rw_ena = 1, frame = 1,wr_data = 96,rd_dta = 34,data_table_out = 011001
+# At time               815000, start = 1, rw_ena = 1, frame = 1,wr_data = 96,rd_dta = 99,data_table_out = 011001
+# At time               825000, start = 1, rw_ena = 1, frame = 1,wr_data = 96,rd_dta = 41,data_table_out = 011001
+# At time               835000, start = 1, rw_ena = 1, frame = 1,wr_data = 96,rd_dta = 0c,data_table_out = 011001
+# At time               845000, start = 1, rw_ena = 1, frame = 1,wr_data = 96,rd_dta = 14,data_table_out = 011001
+# At time               855000, start = 0, rw_ena = 1, frame = 1,wr_data = 96,rd_dta = 00,data_table_out = 011001
+# At time               875000, start = 1, rw_ena = 1, frame = 1,wr_data = 96,rd_dta = 00,data_table_out = 011001
+# At time               895000, start = 1, rw_ena = 1, frame = 1,wr_data = 96,rd_dta = 90,data_table_out = 011001
+# At time               905000, start = 1, rw_ena = 1, frame = 1,wr_data = 96,rd_dta = d1,data_table_out = 011001
+# At time               915000, start = 1, rw_ena = 1, frame = 1,wr_data = 96,rd_dta = 32,data_table_out = 011001
+# At time               925000, start = 1, rw_ena = 1, frame = 1,wr_data = 96,rd_dta = 55,data_table_out = 011001
+# At time               935000, start = 1, rw_ena = 1, frame = 1,wr_data = 96,rd_dta = a7,data_table_out = 011001
+# At time               945000, start = 1, rw_ena = 1, frame = 1,wr_data = 96,rd_dta = b2,data_table_out = 011001
+# At time               955000, start = 1, rw_ena = 1, frame = 1,wr_data = 96,rd_dta = 65,data_table_out = 011001
+# At time               965000, start = 1, rw_ena = 1, frame = 1,wr_data = 96,rd_dta = 96,data_table_out = 011001
+# ** Note: $finish    : ../tb/MMU_tb.sv(221)
+#    Time: 975 ns  Iteration: 0  Instance: /MMU_tb
+# 1
+# Break at ../tb/MMU_tb.sv line 221
+# Causality operation skipped due to absense of debug database file

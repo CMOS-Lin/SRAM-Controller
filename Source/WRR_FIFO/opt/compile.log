@@ -1,0 +1,11 @@
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+vlog -incr -sv -cover sbceft -work work ../src/HD.v ../src/Priority_num.v ../src/WRR_FIFO.sv ../src/Data_Out.v ../src/FIFO_top.v ../tb/FIFO_top_tb.sv -l ../opt/compile.log 
+-- Skipping module HD
+-- Skipping module Priority_num
+-- Compiling module WRR_FIFO
+-- Skipping module Data_Out
+-- Skipping module FIFO_top
+-- Skipping module FIFO_top_tb
+
+Top level modules:
+	FIFO_top_tb

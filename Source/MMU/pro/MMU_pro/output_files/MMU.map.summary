@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Mon May 06 22:27:11 2024
+Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Standard Edition
+Revision Name : MMU
+Top-level Entity Name : MMU
+Family : Cyclone IV E
+Total logic elements : 1,087
+    Total combinational functions : 556
+    Dedicated logic registers : 574
+Total registers : 574
+Total pins : 50
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
